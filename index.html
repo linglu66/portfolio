@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ling Lu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div id ="f1">
+		<div id ="navbar">
+			<div id ="nav">
+				<a href="#" style="color: black; font-weight: 600;" class = "link">WORK</a>
+				<a href="resume.pdf" target="_blank" class="link">RESUME</a>
+			</div>
+			<div id ="links">
+				<a href="#"><img class="icon" src="pics/in41.png"></a>
+				<a href="#"><img class="icon" src="pics/git64.png"></a>
+			</div>
+		</div>
+
+		<div id ="tagline" >
+			Hi, I'm Ling Lu. <br>
+			I'm a second year engineer at UofT who likes design.
+		</div>
+
+		<!-- <div id ="divider">
+			WORK
+		</div> -->
+		<!-- <button onclick="topFunction()" id ="top" > Top </button> -->
+		<div id="work" >
+			<div class ="row">
+				<div class ="frame">
+					<img class ="pic" src="pics/prev2@3x.png">
+				</div>
+				<div class ="text-block">
+					<div class ="title">UofT - ACORN Redesign</div>
+					<div class = "keywords">Usability Analysis, Visual Design, User Research</div>
+					A side project where I sought to analyze the shortcomings of our online student centre's interface, and re-design it. 
+					<a href="acornredesign.html"><div class ="button">Case Study</div>
+					</a>
+					
+				</div>
+				
+			</div>
+			<div class ="row">
+
+				<div class ="text-block">
+					<div class="title">Seven - App Concept</div>
+					<div class = "keywords">Visual Design, User Research</div>
+					Seven is a life-logging mobile app I designed in my first year of university. 
+					<a href="seven.html"><div class ="button">Case Study</div>
+					</a>
+					
+					
+				</div>
+				<div class ="frame">
+					<img class ="pic" src="pics/croptop.jpg">
+				</div>
+			</div>
+			<div class ="row">
+				<div class ="pic"></div>
+				<div class ="text-block">
+					<div class ="title">Reddit - Sentiment Analysis</div>
+					<div class = "keywords"></div>
+					
+					<a href="#"><div class ="button">Case Study</div></a>
+					
+					
+				</div>
+				
+			</div>
+	
+			
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+		        document.getElementById("top").style.display = "block";
+		    } else {
+		        document.getElementById("top").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0; // For Safari
+		    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		} 
+	</script>
+</body>
+</html>

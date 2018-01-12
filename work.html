@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id ="f1">
+		<div id ="navbar">
+			<div id ="nav">
+				<a href="index.html" class = "link">WORK</a>
+				<a href="#" class= "link">RESUME</a>
+			</div>
+			<div id ="links">
+				<a href="#"><img class="icon" src="pics/in41.png"></a>
+				<a href="#"><img class="icon" src="pics/git64.png"></a>
+			</div>
+		</div>
+
+		<div class= "row1" style="margin-top: 50px;"> 
+			<div class="title-block" style="margin-top: 30%; ">
+				<p>ACORN Redesign</p>
+				<h1 style="margin-top: 20px;">Punchlines are important for grabbing attention.</h1>
+			</div>
+			<div class ="frame">
+					<img class ="pic" src="pics/prev2@3x.png">
+			</div>
+		</div>
+		<div style="width: 70%;">
+			<div class = "descript"> 
+				<h2>Overview</h2>
+				<p>After two years of getting to know ACORN (The Accessible Campus Online Resource Network), I noticed some inefficiencies in the design, and wanted to try my hand a re-making the interface. Initially I leaned towards a complete re-design, however after a thorough usability analysis on the current design, decided that the content frame was there and that the interface just needed a clean-up.</p>
+
+			</div>
+			<div class = "descript"> 
+				<h2>Goals </h2>
+				<ul>
+					<li>Identify the strengths and weaknesses of the current interface</li>
+					<li>Re-design it to capitalize on the strengths and reduce clutter and confusion</li>
+				</ul>
+
+			</div>
+			<div class = "descript"> 
+				<h2>Concept Generation & Wireframes</h2>
+				<p>The initial brainstorm and some possible design directions.</p>
+				<div class="frame2">
+					<img class = pic2 src="pics/Dashboard analysis@3x.png">
+				</div>
+			</div>
+			<div class="descript">
+				<h2>Design Analysis</h2>
+				<p>A sample of the analysis done - identifying parts that could be confusing or elements that need reworking.</p>
+				<div class="frame2">
+					<img class  = pic2 src="pics/Dashboard analysis@3x.png">
+				</div>
+			</div>
+
+			<div class ="descript">
+				<h2>Results</h2>
+				<p>I wanted to stick to the "if it's not broken, don't fix it" concept for this redesign, since functionality-wise there isn't anything terribly wrong with ACORN. Just some visual aspects that came across as awkward or clunky that I wanted to try to improve in my version.  </p>
+				<div class="frame2">
+					<img class = pic2 src="pics/Comparison@3x.png">
+				</div>
+			</div>
+
+		<button onclick="topFunction()" id ="top" > Top </button>
+
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+		        document.getElementById("top").style.display = "block";
+		    } else {
+		        document.getElementById("top").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0; // For Safari
+		    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		} 
+	</script>
+</body>
+</html>

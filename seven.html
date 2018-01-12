@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id ="f1">
+		<div id ="navbar">
+			<div id ="nav">
+				<a href="index.html" class = "link">WORK</a>
+				<a href="#" class= "link">RESUME</a>
+			</div>
+			<div id ="links">
+				<a href="#"><img class="icon" src="pics/in41.png"></a>
+				<a href="#"><img class="icon" src="pics/git64.png"></a>
+			</div>
+		</div>
+
+		<div class= "row1" style="margin-top: 50px;"> 
+			<div class="title-block" style="margin-top: 50px;">
+				<p>Seven - App Concept</p>
+				<h1 style="margin-top: 20px;">Cool life-logging app for folks of all ages.</h1>
+			</div>
+			<div class ="frame">
+					<img class ="pic" src="pics/croptop.jpg">
+			</div>
+		</div>
+		<div style="width: 70%;">
+			<div class = "descript"> 
+				<h2>Overview</h2>
+				<p>Seven is a productivity app designed from an engineering approach based on human psychology and motivation. Users can write down a weekly goal (or choose one from the app's database), and Seven will suggest tasks ordered by difficulty which can be added to a personalized list of metrics that defines the data to be logged. </p>
+
+			</div>
+
+			<div class = "descript" style="justify-content: space-between;display: flex;"> 
+				<div style="display: inline-block; width: 50%; border-right: 0.5px solid  black;padding-right: 30px;">
+					<h3>My Role</h3>
+				
+				
+					<p>Product conceptualization and lead design of both product and marketing material, including the user interfaces on iOS, as well as design of website.</p>
+				</div>
+				<div style="display: inline-block; width:50%;padding-left: 30px;">
+					<h3>The Challenge</h3>
+				
+				
+					<p>Create a life-logging app that explicitly tackles issues of similar apps; the "new app" feeling fading away and consumers losing motivation for continuous use.</p>
+				</div>
+
+			</div>
+			<div class = "descript"> 
+				<h2>Goals </h2>
+				<ul>
+					<li>Identify the strengths and weaknesses of the current interface</li>
+					<li>Re-design it to capitalize on the strengths and reduce clutter and confusion</li>
+				</ul>
+
+			</div>
+			<div class = "descript"> 
+				<h2>Approach</h2>
+				<p>Initially, the prompt was quite generous - "Life-logging app". I did some thinking and looked into existing products to narrow the scope of the project down to something that wasn't confined to one topic (finance, excercise, healthy eating etc.) and promoted short term goal-setting and time management skills.</p>
+				<div class="frame2">
+					<img class = pic2 src="pics/croptop2.jpg">
+				</div>
+				<br>
+				<p>Seven does not require its users to commit to one type of goal; users can be committed to healthy eating one week, and if it's not to their liking, they can switch to gardening the next. Seven provides space for the user to build on existing interests or grow in new directions, which fundamentally sets it apart from most life-logging apps.</p>
+			</div>
+			<div class="descript">
+				<h2>What keeps users coming back?</h2>
+				<p>Seven has a 'progression bar'; every time a user logs their data, the bar fills up a bit more. By the end of the week, the bar will be full whether or not the user reached their goals. This prevents the users from being discouraged and works towards building a habit of daily logging - users can feel good every time they log a bit of data. Seven also awards "badges", which are charming graphic stickers that can be obtained by hitting certain goals.</p>
+				<div class="frame2">
+					<img class  = pic2 src="pics/Dashboard analysis@3x.png">
+				</div>
+			</div>
+
+
+		<button onclick="topFunction()" id ="top" style="display: hidden;"> Top </button>
+
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+		        document.getElementById("top").style.display = "block";
+		    } else {
+		        document.getElementById("top").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 0; // For Safari
+		    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		} 
+	</script>
+</body>
+</html>
