@@ -85,7 +85,8 @@ p{
 }
 #divider{
 	padding-bottom:10px;
-	margin-top: 100px;
+	margin-bottom: 50px;
+	margin-top: 80px;
 	border-bottom: solid lightgrey 2px;
 	color: grey;
 
@@ -146,6 +147,12 @@ p{
 	text-decoration: italic;
 	font-size: 20px;
 	margin-bottom: 30px;
+}
+
+.keywords2{
+	text-decoration: italic;
+	font-size: 20px;
+	margin-bottom: 15px;
 }
 
 .pic{
@@ -237,4 +244,9 @@ line-height: 25px;
 
 .descript > ul > li{
 	margin-top: 10px;
+}
+
+.thin-row {
+	margin-bottom: 80px;
+	
 }
