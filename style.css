@@ -9,8 +9,12 @@
 
 
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility; 
-            
+    text-rendering: optimizeLegibility;
+
+}
+body{
+	max-width: 1600px;
+
 }
 
 @keyframes fadein {
@@ -96,9 +100,9 @@ p{
 .text-block{
 	width: 45%;
 	/*border: red solid 1px;*/
-	
-	height: auto;	
-	
+
+	height: auto;
+
 }
 .proj_text{
 	line-height: 12px;
@@ -256,5 +260,5 @@ line-height: 25px;
 
 .thin-row {
 	margin-bottom: 80px;
-	
+
 }
