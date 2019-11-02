@@ -1,0 +1,256 @@
+*{
+	font-family: 'Roboto',"Hind","Segoe UI",sans-serif;
+    transition: all 0.5s ease;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+body{
+	margin: 0px;
+	margin-left: 130px;
+	margin-right:130px;
+}
+/*bigchunks*/
+#topchunk{
+	margin-bottom: 15vh;
+	
+
+}
+
+
+#workchunk{
+	margin-top: 10vh;
+	margin-bottom: 20vh;
+	opacity: 0;
+
+    animation: 0.5s ease-out fadein;
+    /*animation-delay: 3s;*/
+	animation-fill-mode: forwards;
+}
+#work{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+/*fonts*/
+h2{
+	opacity: 1;
+	font-weight: 700;
+	font-size: 36px;
+	animation: 1s ease-out fadein;
+    
+}
+
+#topbody{
+	font-size: 24px;
+	font-weight: 300;
+
+	line-height: 30px;
+	width:60%;
+
+	opacity: 0;
+
+    animation: 0.5s ease-out fadein;
+    /*animation-delay: 1s;*/
+	animation-fill-mode: forwards;
+}
+
+#topsmbody{
+	font-weight: 300;
+
+	font-size: 18px;
+	line-height: 25px;
+
+	opacity: 0;
+
+    animation: 0.5s ease-out fadein;
+    /*animation-delay: 3s;*/
+	animation-fill-mode: forwards;
+}
+
+.topgrey{
+	color: grey;
+}
+/*textboxes*/
+#toptext{
+	margin-top: 25vh;
+	width: 80%;
+}
+
+/*navbar*/
+
+#navlist{
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	/*border-bottom: 1px solid black;*/
+	/*width: 33vw;*/
+}
+
+#navlist li{
+	padding-left: 25px;
+	padding: 10px 25px 10px;
+	padding-right: 25px;
+	/*padding-right: 25px;*/
+	list-style: none;
+	border-radius: 5px;
+	margin-right: 10px;
+
+
+	display: inline;
+
+}
+
+#navlist li:hover{
+	cursor: pointer;
+	background-color: #E7EAF0;
+}
+
+
+
+#navlist .navsel.active{
+	background-color: #E7EAF0;
+
+}
+
+
+/*workchunks*/
+
+.workitem{
+	
+	width: 30%;
+	height: 350px;
+	flex-grow:1;	
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+
+    animation: none;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+    display: none;
+    position: relative;
+}
+
+.workitem:hover {
+	box-shadow:
+	            1px 1px firebrick,
+	            2px 2px firebrick,
+	            3px 3px firebrick;
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+
+     -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+	/*background-color: blue;*/
+}
+
+.ml{
+	background-color: tomato;
+	
+}
+
+.prod{
+	background-color: yellowgreen;
+}
+
+.show{
+	display: block;
+}
+
+.long{
+	width: 50%;
+}
+
+/*workchunk details*/
+.tag{
+	border-radius: 50px;
+	background-color: green;
+	width: auto;
+	padding: 10px 15px;
+	margin: 15px;
+	display: inline-block;
+	position: absolute;
+	bottom:0px;
+	left: 0px;
+
+
+}
+
+.title{
+	color: white;
+	display: inline-block;
+	padding: 10px 15px;
+	margin: 15px;
+	margin-top: 15%;
+	background-color: #3365B8;
+	border-radius: 5px;
+	/*box-shadow:
+            5px 5px 5px #3365B8;*/
+    font-weight: 300;
+
+}
+.workitem:hover ~ .title{
+	
+}
+@media only screen and (max-width: 1200px) {
+	.workitem{
+		width: 40%;
+	}
+	
+	#topbody{
+		width: 100%;
+	}
+
+	body{
+		margin-left: 50px;
+	margin-right:50px;
+	}
+
+
+}
+
+@media only screen and (max-width: 902px) {
+	.workitem{
+		width: 80%;
+	}
+	#topbody{
+		width: 100%;
+	}
+	#toptext{
+		width: 100%;
+	}
+	#navlist{
+		justify-content: space-between;
+	}
+}
+
+
+#dessa{
+	background: url("pics/atlas_bg.png") bottom center no-repeat;
+	background-size: auto 100%;
+	background-color: #3F82F2;
+}
+
+#dessa .tag{
+	background-color: #3365B8;
+	color: white;
+	font-weight: 100;
+}
+
+#dessa.workitem:hover {
+	box-shadow:
+	            1px 1px #3365B8,
+	            2px 2px  #3365B8,
+	            3px 3px #3365B8;}
