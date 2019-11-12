@@ -1,5 +1,5 @@
 *{
-	font-family: 'Roboto',"Hind","Segoe UI",sans-serif;
+	font-family: 'Mukta','Roboto',"Hind","Segoe UI",sans-serif;
     transition: all 0.5s ease;
 
     -webkit-font-smoothing: antialiased;
@@ -17,8 +17,8 @@
 
 body{
 	margin: 0px;
-	margin-left: 130px;
-	margin-right:130px;
+	margin-left: 100px;
+	margin-right:100px;
 }
 /*bigchunks*/
 #topchunk{
@@ -77,6 +77,12 @@ h2{
     /*animation-delay: 3s;*/
 	animation-fill-mode: forwards;
 }
+.overlay_sub{
+	color: white;
+	font-size:16px;
+	font-weight: 200;
+	margin: 0px;
+}
 
 .topgrey{
 	color: grey;
@@ -128,11 +134,11 @@ h2{
 
 .workitem{
 	
-	width: 30%;
+	width: 40%;
 	height: 350px;
 	flex-grow:1;	
-	margin-right: 10px;
-	margin-bottom: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	border-radius: 5px;
 
     animation: none;
@@ -143,12 +149,7 @@ h2{
 }
 
 .workitem:hover {
-	box-shadow:
-	            1px 1px firebrick,
-	            2px 2px firebrick,
-	            3px 3px firebrick;
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
+	
 
      -webkit-transform: scale(1.01);
         -ms-transform: scale(1.01);
@@ -156,6 +157,26 @@ h2{
 	/*background-color: blue;*/
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(44, 124, 244, 0.9);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workitem:hover .overlay {
+  opacity: 1;
+}
 .ml{
 	background-color: tomato;
 	
@@ -170,7 +191,7 @@ h2{
 }
 
 .long{
-	width: 50%;
+	width: 45%;
 }
 
 /*workchunk details*/
@@ -178,27 +199,32 @@ h2{
 	border-radius: 50px;
 	background-color: green;
 	width: auto;
-	padding: 10px 15px;
+	padding: 10px 20px;
 	margin: 15px;
 	display: inline-block;
 	position: absolute;
 	bottom:0px;
 	left: 0px;
+	font-weight: 200;
 
 
 }
 
 .title{
 	color: white;
-	display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+
+}
+.overlay_text{
 	padding: 10px 15px;
-	margin: 15px;
-	margin-top: 15%;
-	background-color: #3365B8;
-	border-radius: 5px;
-	/*box-shadow:
-            5px 5px 5px #3365B8;*/
-    font-weight: 300;
+	margin: auto;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
 
 }
 .workitem:hover ~ .title{
@@ -238,19 +264,51 @@ h2{
 
 
 #dessa{
-	background: url("pics/atlas_bg.png") bottom center no-repeat;
+	background: url("pics/atlas_bg.png") bottom right no-repeat;
 	background-size: auto 100%;
 	background-color: #3F82F2;
 }
 
+
 #dessa .tag{
-	background-color: #3365B8;
+	background-color: #286bc9;
 	color: white;
 	font-weight: 100;
 }
 
 #dessa.workitem:hover {
-	box-shadow:
-	            1px 1px #3365B8,
-	            2px 2px  #3365B8,
-	            3px 3px #3365B8;}
+	}
+
+#face2face{
+	background: url("pics/facetoface graphicbright.png") center center no-repeat;
+	background-size:50%;
+	background-color:  rgba(0, 186, 249);
+
+}
+
+#face2face .tag{
+	background-color: #02a5db;
+	color: white;
+}
+
+#face2face .overlay{
+	/*background-color: rgb(108, 214, 207, 0.8);*/
+	background-color: rgba(0, 186, 249, 0.9);
+}
+
+#faketrump{
+	background: url("pics/trumptweets.jpg") center center no-repeat;
+	background-size:50%;
+	background-color: #3343CC;
+
+}
+
+#faketrump .tag{
+	background-color: #1d2fb7;
+	color: white;
+}
+
+#faketrump .overlay{
+	/*background-color: rgb(108, 214, 207, 0.8);*/
+	background-color: rgb(50, 65, 198, 0.9);
+}
