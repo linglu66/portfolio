@@ -260,22 +260,31 @@ h2{
 	#navlist{
 		justify-content: space-between;
 	}
+	#navlist li{
+		width: 33vw;
+		text-align: center;
+	}
+
 }
 
 
 #dessa{
-	background: url("pics/preview_dessa.png") bottom center no-repeat;
-	background-size: auto 100%;
-	background-color: #3F82F2;
+	background: url("pics/1xpreview_dessa.png") bottom center no-repeat;
+	background-size: 100% auto;
+	background-color: #F8FAFF;
 }
 
 
 #dessa .tag{
 	background-color: #286bc9;
-	color: white;
+	color: black;
 	font-weight: 100;
 }
 
+#dessa .overlay{
+	/*background-color: rgb(108, 214, 207, 0.8);*/
+	background-color: rgba(248, 250, 255, 0.9);
+}
 #dessa.workitem:hover {
 	}
 
