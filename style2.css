@@ -273,7 +273,7 @@ h2{
 #dessa .tag{
 	background-color: #286bc9;
 	color: white;
-	font-weight: 100;
+	font-weight: 200;
 }
 
 #dessa.workitem:hover {
@@ -311,4 +311,21 @@ h2{
 #faketrump .overlay{
 	/*background-color: rgb(108, 214, 207, 0.8);*/
 	background-color: rgb(50, 65, 198, 0.9);
+}
+
+#foodora{
+	background: url("pics/foodora.png") center center no-repeat;
+	background-size:50%;
+	background-color: #ffffff;
+}
+
+#foodora .tag{
+	/*background-color: #D70F64;*/
+	background-color: #e04a86;
+	color: white;
+}
+
+#foodora .overlay{
+	/*background-color: rgb(108, 214, 207, 0.8);*/
+	background-color: rgb(186, 26, 92, 0.9);
 }
