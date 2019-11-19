@@ -1,6 +1,6 @@
 *{
 	font-family: 'Mukta','Roboto',"Hind","Segoe UI",sans-serif;
-    transition: all 0.5s ease;
+    /*transition: all 0.5s ease;*/
 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -17,13 +17,13 @@
 
 body{
 	margin: 0px;
+	padding-top: 0px;
 	margin-left: 100px;
 	margin-right:100px;
 }
-/*bigchunks*/
+/*big chunks*/
 #topchunk{
 	margin-bottom: 15vh;
-	
 
 }
 
@@ -42,13 +42,81 @@ body{
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
+.title_row.row{
+	padding-bottom: 50px;
+	margin-bottom: 0px;
+
+}
+
+.title_row{
+	padding-top: 50px;
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.row{
+	height: auto;
+	border: 1px solid black;
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+}
+
+.row_img{
+	position: absolute;
+	left: 0px;	
+	border: 1px solid black;
+
+	height: 400px;
+	background-color: tomato;
+	width: 100%;
+}
+
+.after_img{
+	margin-top:400px;
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	padding: 0px;
+}
+/*small chunks*/
+.after_img ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+	padding: 20px;
+
+}
+
+.center_blurb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 200px;
+	padding-right: 200px;
+	flex-direction: column;
+}
+
+
 /*fonts*/
+h1{
+	margin-bottom: 0px;
+}
 h2{
 	opacity: 1;
 	font-weight: 700;
 	font-size: 36px;
 	animation: 1s ease-out fadein;
     
+}
+
+.quote{
+	font-size: 26px;
 }
 
 #topbody{
@@ -80,12 +148,19 @@ h2{
 .overlay_sub{
 	color: white;
 	font-size:16px;
-	font-weight: 200;
+	font-weight: 300;
 	margin: 0px;
 }
 
 .topgrey{
 	color: grey;
+}
+
+.subtitle{
+	font-weight: 300;
+
+	font-size: 18px;
+	line-height: 25px;
 }
 /*textboxes*/
 #toptext{
@@ -129,7 +204,47 @@ h2{
 
 }
 
+.center_text{
+	/*width: 70%;*/
+}
+/*top navbar*/
+#topnav{
+	position: fixed;
+	top: -18px;
+	left: 0px;
+	z-index: 100;
+	padding:0px;
+	flex-grow: 1;
+	width:100%;
+	padding-top: 20px;
+	padding-bottom:20px;
+	background-color: white;	
 
+}
+.margin{
+	margin-left: 100px;
+	margin-right: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+#navtitle{
+	/*flex-grow: 1;*/
+	font-size: 20px;
+}
+#toplinks{
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+}
+#toplinks a{
+	margin-left: 40px;
+	text-decoration: none;
+
+}
 /*workchunks*/
 
 .workitem{
@@ -269,16 +384,20 @@ h2{
 
 
 #dessa{
-	background: url("pics/1xpreview_dessa.png") bottom center no-repeat;
+	/*background: url("pics/1xpreview_dessa.png") bottom center no-repeat;*/
 	background-size: 100% auto;
 	background-color: #F8FAFF;
 }
 
+#dessa .title,#dessa .overlay_sub{
+	color: #286bc9;
+
+}
 
 #dessa .tag{
 	background-color: #286bc9;
 
-	color: black;
+	color: white;
 	font-weight: 100;
 }
 
