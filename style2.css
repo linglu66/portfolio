@@ -1,5 +1,5 @@
 *{
-	font-family: 'Mukta','Roboto',"Hind","Segoe UI",sans-serif;
+	font-family: 'Mukta',"Segoe UI",sans-serif;
     /*transition: all 0.5s ease;*/
 
     -webkit-font-smoothing: antialiased;
@@ -34,7 +34,7 @@ body{
 	opacity: 0;
 
     animation: 0.5s ease-out fadein;
-    /*animation-delay: 3s;*/
+    animation-delay: 3s;
 	animation-fill-mode: forwards;
 }
 #work{
@@ -60,7 +60,7 @@ body{
 }
 .row{
 	height: auto;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	padding-top: 80px;
 	padding-bottom: 80px;
 
@@ -69,7 +69,6 @@ body{
 .row_img{
 	position: absolute;
 	left: 0px;	
-	border: 1px solid black;
 
 	height: 400px;
 	background-color: tomato;
@@ -89,7 +88,8 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 	list-style: none;
-	padding: 20px;
+	padding: 20px 0px;
+
 
 }
 
@@ -104,6 +104,9 @@ body{
 
 
 /*fonts*/
+#toplinks #active_link{
+	color: black;
+}
 h1{
 	margin-bottom: 0px;
 }
@@ -129,7 +132,7 @@ h2{
 	opacity: 0;
 
     animation: 0.5s ease-out fadein;
-    /*animation-delay: 1s;*/
+    animation-delay: 1s;
 	animation-fill-mode: forwards;
 }
 
@@ -142,7 +145,7 @@ h2{
 	opacity: 0;
 
     animation: 0.5s ease-out fadein;
-    /*animation-delay: 3s;*/
+    animation-delay: 3s;
 	animation-fill-mode: forwards;
 }
 .overlay_sub{
@@ -162,6 +165,32 @@ h2{
 	font-size: 18px;
 	line-height: 25px;
 }
+
+
+#navtitle{
+	/*flex-grow: 1;*/
+	font-size: 18px;
+	text-decoration: none;
+	color: black;
+}
+#toplinks{
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+
+}
+#toplinks a{
+	margin-left: 40px;
+	text-decoration: none;
+	color: lightgrey;
+    transition: color 0.2s ease-in-out;
+
+
+}
+#toplinks a:hover{
+	color: grey;
+
+}
 /*textboxes*/
 #toptext{
 	margin-top: 25vh;
@@ -179,6 +208,7 @@ h2{
 }
 
 #navlist li{
+	transition: 0.2s ease-in-out;
 	padding-left: 25px;
 	padding: 10px 25px 10px;
 	padding-right: 25px;
@@ -187,25 +217,33 @@ h2{
 	border-radius: 5px;
 	margin-right: 10px;
 
-
+	color: grey;
 	display: inline;
 
 }
 
 #navlist li:hover{
 	cursor: pointer;
-	background-color: #E7EAF0;
+	background-color: rgba(231, 234, 240, 0.5);
+	color: black;
 }
 
 
 
 #navlist .navsel.active{
 	background-color: #E7EAF0;
+	color: black;
 
 }
 
 .center_text{
 	/*width: 70%;*/
+}
+.left_text{
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	width:100%;
 }
 /*top navbar*/
 #topnav{
@@ -231,22 +269,15 @@ h2{
 
 }
 
-#navtitle{
-	/*flex-grow: 1;*/
-	font-size: 20px;
-}
-#toplinks{
-	font-size: 16px;
-	margin: 0px;
-	padding: 0px;
-}
-#toplinks a{
-	margin-left: 40px;
-	text-decoration: none;
 
-}
 /*workchunks*/
+.workitem.visible{
+	display: block;
+	height: 300px;
+	width: 35%;
+	margin-right: 40px;
 
+}
 .workitem{
 	
 	width: 40%;
@@ -356,9 +387,12 @@ h2{
 
 	body{
 		margin-left: 50px;
-	margin-right:50px;
+		margin-right:50px;
 	}
-
+.center_blurb{
+		padding-left: 100px;
+	padding-right: 100px;
+	}
 
 }
 
@@ -379,8 +413,29 @@ h2{
 		width: 33vw;
 		text-align: center;
 	}
+	.workitem.visible{
+		width: 80%;
+		margin-right: 0px;
+	}
 
+	.row_img#face2face{
+		background-size: 50%;
+	}
+	
+	.center_blurb.row{
+		padding-left: 0px;
+	padding-right: 0px;
+	margin-right: 0px
+	}
 }
+
+@media only screen and (max-width: 902px) {
+	.center_blurb{
+		padding-left: 20px;
+	padding-right: 20px;
+	}
+}
+
 
 
 #dessa{
@@ -425,6 +480,10 @@ h2{
 	background-color: rgba(0, 186, 249, 0.9);
 }
 
+#face2face.row_img{
+	background-size:25%;
+}
+
 #faketrump{
 	background: url("pics/trumptweets.jpg") center center no-repeat;
 	background-size:50%;
@@ -442,6 +501,9 @@ h2{
 	background-color: rgb(50, 65, 198, 0.9);
 }
 
+#faketrump.row_img{
+	background-size:35%;
+}
 #foodora{
 	background: url("pics/foodora.png") center center no-repeat;
 	background-size:50%;
