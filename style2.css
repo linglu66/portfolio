@@ -120,6 +120,7 @@ h2{
 
 .quote{
 	font-size: 26px;
+	text-align: center;
 }
 
 #topbody{
@@ -237,7 +238,10 @@ h2{
 }
 
 .center_text{
-	/*width: 70%;*/
+	/*width: 800px;*/
+	font-size: 18px;
+	text-align: left;
+	/*border: 1px solid green;*/
 }
 .left_text{
 	display: flex;
@@ -439,8 +443,8 @@ h2{
 
 
 #dessa{
-	/*background: url("pics/1xpreview_dessa.png") bottom center no-repeat;*/
-	background-size: 100% auto;
+	background: url("pics/1xpreview_dessa.png") bottom center no-repeat;
+	background-size: auto 100%;
 	background-color: #F8FAFF;
 }
 
