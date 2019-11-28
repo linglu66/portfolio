@@ -1,6 +1,6 @@
 *{
 	font-family: 'Mukta',"Segoe UI",sans-serif;
-    /*transition: all 0.5s ease;*/
+    # /*transition: all 0.5s ease;*/
 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -18,29 +18,40 @@
 body{
 	margin: 0px;
 	padding-top: 0px;
-	margin-left: 100px;
-	margin-right:100px;
+  margin-left: 100px;
+	margin-right: 100px;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
 }
 /*big chunks*/
 #topchunk{
-	margin-bottom: 15vh;
-
+	margin-bottom: 80px;
+	# border: 1px solid green;
 }
 
 
 #workchunk{
+	/*border: 1px solid green;*/
+
 	margin-top: 10vh;
 	margin-bottom: 20vh;
-	opacity: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	# opacity: 0;
 
-    animation: 0.5s ease-out fadein;
-    animation-delay: 3s;
+    # animation: 0.5s ease-out fadein;
+    # animation-delay: 3s;
 	animation-fill-mode: forwards;
 }
 #work{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .title_row.row{
@@ -57,12 +68,15 @@ body{
 	justify-content: flex-end;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
-	margin-left: 100px;
-	margin-right:100px;
+	/*margin-left: 100px;*/
+	/*margin-right: 100px;*/
 }
 .row{
 	height: auto;
+	margin-left: auto;
+	margin-right: 
 	/*border: 1px solid black;*/
+	max-width: 1170px;
 	padding-top: 80px;
 	padding-bottom: 80px;
 
@@ -97,7 +111,7 @@ body{
 }
 
 .after_img li{
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	width: 200px;
 
 }
@@ -122,18 +136,24 @@ h2{
 	opacity: 1;
 	font-weight: 700;
 	font-size: 36px;
-	animation: 1s ease-out fadein;
+	# animation: 1s ease-out fadein;
     
+}
+
+li p{
+	font-weight: 200;
 }
 
 .grid_label{
 	margin-bottom: 0px; 
 	padding-bottom: 0px;
-	border: 1px solid green;
+
+	/*border: 1px solid green;*/
 }
 .quote{
 	font-size: 26px;
 	text-align: center;
+	font-weight: 200;
 }
 
 #topbody{
@@ -143,10 +163,10 @@ h2{
 	line-height: 30px;
 	width:60%;
 
-	opacity: 0;
+	/*opacity: 0;*/
 
-    animation: 0.5s ease-out fadein;
-    animation-delay: 1s;
+    /*animation: 0.5s ease-out fadein;*/
+    /*animation-delay: 1s;*/
 	animation-fill-mode: forwards;
 }
 
@@ -156,10 +176,10 @@ h2{
 	font-size: 18px;
 	line-height: 25px;
 
-	opacity: 0;
+	# opacity: 0;
 
-    animation: 0.5s ease-out fadein;
-    animation-delay: 3s;
+    # animation: 0.5s ease-out fadein;
+    # animation-delay: 3s;
 	animation-fill-mode: forwards;
 }
 .overlay_sub{
@@ -207,7 +227,7 @@ h2{
 }
 /*textboxes*/
 #toptext{
-	margin-top: 25vh;
+	margin-top: 150px;
 	width: 80%;
 }
 
@@ -253,6 +273,7 @@ h2{
 
 .center_text{
 	/*width: 800px;*/
+	font-weight: 200;
 	font-size: 18px;
 	text-align: left;
 	/*border: 1px solid green;*/
@@ -274,12 +295,22 @@ h2{
 	width:100%;
 	padding-top: 20px;
 	padding-bottom:20px;
+
+
 	background-color: white;	
+	/*border: 1px solid green;*/
 
 }
 .margin{
-	margin-left: 100px;
-	margin-right: 100px;
+	/*margin-left: 100px;*/
+	/*margin-right: 100px;*/
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1170px;
+	/*border: 1px solid red;*/
+
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -296,12 +327,16 @@ h2{
 	margin-right: 40px;
 
 }
+.workitem.left{
+}
 .workitem{
+
+	margin-right: 20px;
 	
 	width: 40%;
 	height: 350px;
 	flex-grow:1;	
-	margin-right: 20px;
+	
 	margin-bottom: 20px;
 	border-radius: 5px;
 
