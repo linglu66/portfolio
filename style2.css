@@ -449,6 +449,10 @@ li p{
 
 }
 
+a{
+	color: blue;
+	text-decoration: none;
+}
 @media only screen and (max-width: 902px) {
 	.workitem{
 		width: 80%;
