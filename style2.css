@@ -332,7 +332,7 @@ li p{
 .workitem{
 
 	margin-right: 20px;
-	
+
 	width: 40%;
 	height: 350px;
 	flex-grow:1;	
@@ -560,9 +560,9 @@ li p{
 	background-size:35%;
 }
 #foodora{
-	background: url("pics/foodora.png") center center no-repeat;
+	background: url("pics/foodora_05.jpg") center center no-repeat;
 	background-size:50%;
-	background-color: #ffffff;
+	background-color: #d60765;
 }
 
 #foodora .tag{
