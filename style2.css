@@ -98,6 +98,28 @@ body{
 	height: 200px;
 	padding: 0px;
 }
+
+.full_row_img{
+	/*height: 300px;*/
+	/*max-height: 500px;*/
+	min-height: 200px;
+	height: 400px;
+	width: 100%;
+	box-shadow:13px 15px 23px #E0E0E0;
+	margin: 50px 0px;
+
+}
+
+/*images*/
+#trump_complete{
+	background: url("pics/trump_complete.png") center no-repeat;
+	background-size: 100% auto;
+}
+
+#trump_ingame{
+	background: url("pics/trump_ingame.png") center no-repeat;
+	background-size: 100% auto;
+}
 /*small chunks*/
 .after_img ul{
 	display: flex;
@@ -112,7 +134,7 @@ body{
 
 .after_img li{
 	/*border: 1px solid green;*/
-	width: 200px;
+	width: 150px;
 
 }
 .center_blurb{

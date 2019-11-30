@@ -43,29 +43,40 @@
 
 	<div class='row center_blurb'>
 
-		<div class='left_text'>
-			<p>The code:</p>
-			<p>Our paper:</p>
-		</div>
-		<div class='center_text'>
-			<h3> The Problem </h3>	
-			<p class='center_text'>Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah.</p>
-		</div>
+			<h3 class='quote'>We trained a state-of-the-art model (GPT-2) to generate crazy realistic-sounding tweets from Donald Trump. We made a classifier to differentiate real from fake, and then developed a simple game to see how well humans can do vs machines. <br> <br>
+				Check out our code <a href="https://github.com/linglu66/FaceToFace">here</a>, and our paper <a href=''>here</a>.</h3>
+			<!-- <h3 class='quote'>Machine learning is a field where everyone does it their own way, how can we make software to support engineers that both is intuitive to use and feature-rich?</h3> -->
 	</div>
 	<div class='row center_blurb'>
+
 		<div class='center_text'>
-			<h3> Data </h3>	
-			<p class='center_text'>Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah.</p>
+			<h3> The Story </h3>	
+			<p class='center_text'>This project started from a crazy "what if we did this" and became a real game that garnered thousands of visits and discussion from around the world. GPT-2 had released a tune-able model and my coworker <a href="#">Helen</a> came up with the idea of generating Trump tweets, and everything just went from there. <br><br>
+
+			</p>
 		</div>
-	</div>
-		<div class='row center_blurb'>
+
 		<div class='center_text'>
-			<h3> Model </h3>	
-			<p class='center_text'>Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah.</p>
+			<h3> Data and Model </h3>	
+			<p class='center_text'> 
+				We scraped Donald Trump's Twitter feed and fine-tuned GPT2 to generate 10,000 fake tweets. The classifier I trained (LSTM) could distinguish between fake and real tweets to 70% accuracy.
+
+			<p>
+
 		</div>
-	</div>
-	</div>
-		<div class='row center_blurb'>
+
+		<div class='center_text'>
+			<h3> The Game </h3>	
+			<p class='center_text'> 
+				Inspired by <a href='#'>arxiv vs snarxiv</a>, I wanted to develop a similar game where users would try to find the ML-generated fake from pairs of real and fake tweets. The application would randomly choose (without replacement) 10 real and fake tweets from our set of 10,000.
+
+			<p>
+
+		</div>
+			
+		<div class='full_row_img' id='trump_complete'>
+		</div>
+
 		<div class='center_text'>
 			<h3> Results </h3>	
 			<p class='center_text'>Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah.</p>
@@ -84,7 +95,7 @@
 					
 					<span class='tag'>UI/UX  |  Illustration</span>
 				</a>
-				<a href='face2face.html' class="workitem visible  ml" id='face2face'>
+			<!-- 	<a href='face2face.html' class="workitem visible  ml" id='face2face'>
 					<div class='overlay'>
 						<div class='overlay_text'>
 								<h3 class='title'>FaceToFace</h3>
@@ -93,8 +104,18 @@
 					</div>
 					<div class='tag'>Data  |  GANs</div>
 
+				</a> -->
+				<a href='work/faketrump.html' class="workitem visible ml left" id='faketrump'>
+				<div class='overlay'>
+					<div class='overlay_text'>
+							<h3 class='title'>faketrump.ai</h3>
+							<p class='overlay_sub'>Generating, classifying, and gameify-ing real vs. fake Trump tweets</p>
+					</div>
+				</div>
+				<div class='tag'>ML  |  Front-End </div>
+
 				</a>
 		</div>
-</div>
+	</div>
 </body>
 </html>
