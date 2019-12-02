@@ -526,7 +526,8 @@ a{
 }
 
 #dessa .title,#dessa .overlay_sub{
-	color: #286bc9;
+	/*color: #286bc9;*/
+	color:white;
 
 }
 
@@ -538,8 +539,10 @@ a{
 }
 
 #dessa .overlay{
-	/*background-color: rgb(108, 214, 207, 0.8);*/
-	background-color: rgba(248, 250, 255, 0.9);
+	/*background-color: rgb(108, 214, 207, 0.9);*/
+	background-color: rgb(64, 126, 214, 0.9);
+
+	/*background-color: rgba(248, 250, 255, 0.9);*/
 }
 #dessa.workitem:hover {
 	}
