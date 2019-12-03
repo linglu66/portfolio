@@ -4,8 +4,8 @@
 	<title>FaceToFace</title>
 	<link rel="stylesheet" type="text/css" href="../style2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +15,7 @@
 			<div id='toplinks'>
 				<a href="../index.html">Portfolio</a>
 				<!-- <a href="">Resume</a> -->
-				<a href="">About</a>
+				<a href="../about.html">About</a>
 			</div>
 		</div>
 	</ul>
@@ -27,49 +27,40 @@
 	<div class='row after_img'>
 		<ul>
 			<li>
+				<h3>Role</h3>
+				<p>Machine learning</p>
+			</li>
+			<li>
 				<h3>Team</h3>
-				<p> <a href='#'>Jamal Chu</a>, <a href='#'>Michael Jia</a> </p>
+				<p> <a href='https://www.linkedin.com/in/jamal-c-312737104/'>Jamal Chu</a>, <a href='https://www.linkedin.com/in/michaelzcjia/'>Michael Jia</a> </p>
 			</li>
 			<li>
 				<h3>Tools</h3>
-				<p> UI Designer, Illustrator </p>
+				<p> Python, Google Colab, Pytorch </p>
 			</li>
 			<li>
 				<h3>Time</h3>
-				<p> UI Designer, Illustrator </p>
+				<p> 2 months</p>
 			</li>			
 		</ul>
 	</div>
 
 	<div class='row center_blurb'>
 
-		<div class='left_text'>
-			<p>The code:</p>
-			<p>Our paper:</p>
-		</div>
-		<div class='center_text'>
-			<h3> The Problem </h3>	
-			<p class='center_text'>Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah.</p>
-		</div>
+			<h3 class='quote'>Basically FaceApp, before FaceApp got popular.  <br> <br>
+				Check out our code <a href="https://github.com/linglu66/FaceToFace">here</a>, and our paper <a href='https://docs.google.com/document/d/12YGokIgaoSgy5Eez4unxkOIZQlTNTHrbRE4zUIKAj-A/edit?usp=sharing'>here</a>, and some slides <a href="https://docs.google.com/presentation/d/1bdxaCo8bQGi-8YeuxhBukqiCIzBrRGF0I6tPmugAK9o/edit?usp=sharing"> here</a></h3>
+			<!-- <h3 class='quote'>Machine learning is a field where everyone does it their own way, how can we make software to support engineers that both is intuitive to use and feature-rich?</h3> -->
 	</div>
 	<div class='row center_blurb'>
+
 		<div class='center_text'>
-			<h3> Data </h3>	
-			<p class='center_text'>Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah.</p>
+			<h3> The Story </h3>	
+			<p class='center_text'>All we knew is that we wanted to use GANs to make some cool sh*t. Tranforming people's facial expressions hadn't been done yet, so why couldn't we be the first? We narrowed down the exact problem we wanted to solve to - given a person's neutral face, can we make a model to generate that person's face happy, surprised and sad? <br><br>
+
+			</p>
 		</div>
-	</div>
-		<div class='row center_blurb'>
-		<div class='center_text'>
-			<h3> Model </h3>	
-			<p class='center_text'>Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah.</p>
-		</div>
-	</div>
-	</div>
-		<div class='row center_blurb'>
-		<div class='center_text'>
-			<h3> Results </h3>	
-			<p class='center_text'>Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah. Defining a process where it didn't exist prior. Lorem Ipsum blahblah blah. Machine learning is so hard. Blah blah blah.</p>
-		</div>
+
+		
 	</div>
 
 	<div id='workchunk margin show'>
@@ -84,7 +75,7 @@
 					
 					<span class='tag'>UI/UX  |  Illustration</span>
 				</a>
-				<a href='face2face.html' class="workitem visible  ml" id='face2face'>
+			<!-- 	<a href='face2face.html' class="workitem visible  ml" id='face2face'>
 					<div class='overlay'>
 						<div class='overlay_text'>
 								<h3 class='title'>FaceToFace</h3>
@@ -93,8 +84,18 @@
 					</div>
 					<div class='tag'>Data  |  GANs</div>
 
+				</a> -->
+				<a href='faketrump.html' class="workitem visible ml left" id='faketrump'>
+				<div class='overlay'>
+					<div class='overlay_text'>
+							<h3 class='title'>faketrump.ai</h3>
+							<p class='overlay_sub'>Generating, classifying, and gameify-ing real vs. fake Trump tweets</p>
+					</div>
+				</div>
+				<div class='tag'>ML  |  Front-End </div>
+
 				</a>
 		</div>
-</div>
+	</div>
 </body>
 </html>

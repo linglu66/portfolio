@@ -36,8 +36,8 @@ body{
 
 	margin-top: 10vh;
 	margin-bottom: 20vh;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: -15px;
+	/*margin-right: -15px;*/
 	padding: 0px;
 	# opacity: 0;
 
@@ -50,8 +50,6 @@ body{
 	flex-direction: row;
 	flex-wrap: wrap;
 	max-width: 1170px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .title_row.row{
@@ -98,6 +96,98 @@ body{
 	height: 200px;
 	padding: 0px;
 }
+
+.comparison_block{
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	padding: 0px;
+}
+
+.full_row_img{
+	/*height: 300px;*/
+	/*max-height: 500px;*/
+	min-height: 200px;
+	height: 400px;
+	width: 100%;
+	box-shadow:13px 15px 23px #E0E0E0;
+	margin: 50px 0px;
+
+}
+
+/*images*/
+#trump_complete{
+	background: url("pics/trump_complete.png") center no-repeat;
+	background-size: 100% auto;
+}
+
+#trump_ingame{
+	background: url("pics/trump_ingame.png") center no-repeat;
+	background-size: 100% auto;
+}
+.img{
+	width: 100%;
+	background-size: 100% auto;
+	/*height: 400px;*/
+	box-shadow:13px 15px 23px #E0E0E0;
+	margin-bottom: 20px;
+
+
+}
+
+#atlas_old1{
+	background: url("pics/atlas/atlas_old1.png") top no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+}
+#atlas_old2{
+	background: url("pics/atlas/atlas_old2.png") top no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+
+}
+#atlas_old3{
+	background: url("pics/atlas/atlas_old3.png") top no-repeat;
+	background-size: 110% auto;
+	height: 350px;
+
+}
+#atlas_new1{
+	background: url("pics/atlas/atlas_new1.png") top no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+}
+#atlas_new2{
+	background: url("pics/atlas/atlas_new2.png") top no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+
+}
+#atlas_new3{
+	background: url("pics/atlas/atlas_new3.png") top no-repeat;
+	background-size: 120% auto;
+	height: 350px;
+
+}
+#feat1{
+	background: url("pics/atlas/feat_1.png") top no-repeat;
+	background-size: 100% auto;
+	height: 320px;}
+
+#feat2{
+	background: url("pics/atlas/feat_2.png") top no-repeat;
+	background-size: 100% auto;
+	height: 320px;}
+
+#feat3{
+	background: url("pics/atlas/feat_3.png") top no-repeat;
+	background-size: 100% auto;
+	height: 320px;}
+#feat4{
+	background: url("pics/atlas/feat_4.png") top no-repeat;
+	background-size: 100% auto;
+	height: 320px;}
+
 /*small chunks*/
 .after_img ul{
 	display: flex;
@@ -110,9 +200,41 @@ body{
 
 }
 
+.free_block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+
+	padding: 20px 0px;
+	flex-wrap: wrap;
+	flex-grow: 1;
+
+}
+.free_block div{
+	min-width: 400px;
+	max-width: 550px;
+}
+.comparison_block ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+
+	padding: 20px 0px;
+
+
+}
+
 .after_img li{
 	/*border: 1px solid green;*/
-	width: 200px;
+	width: 150px;
+
+}
+
+.comparison_block li{
+	/*border: 1px solid green;*/
+	width: 550px;
 
 }
 .center_blurb{
@@ -229,6 +351,7 @@ li p{
 #toptext{
 	margin-top: 150px;
 	width: 80%;
+	/*margin-left: 15px;*/
 }
 
 /*navbar*/
@@ -237,6 +360,7 @@ li p{
 	display: flex;
 	flex-direction: row;
 	padding: 0px;
+	margin-left: 15px;
 	/*border-bottom: 1px solid black;*/
 	/*width: 33vw;*/
 }
@@ -277,6 +401,10 @@ li p{
 	font-size: 18px;
 	text-align: left;
 	/*border: 1px solid green;*/
+}
+
+.center_text.list{
+	width: 100%;
 }
 .left_text{
 	display: flex;
@@ -323,22 +451,23 @@ li p{
 .workitem.visible{
 	display: block;
 	height: 300px;
-	width: 35%;
-	margin-right: 40px;
+	width: 35%;	
 
 }
-.workitem.left{
-}
+
 .workitem{
 
-	margin-right: 20px;
-	
+	/*margin-right: 20px;*/
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 30px;
+
 	width: 40%;
 	height: 350px;
 	flex-grow:1;	
 	
-	margin-bottom: 20px;
-	border-radius: 5px;
+	/*margin-bottom: 20px;*/
+	border-radius: 10px;
 
     animation: none;
     transition: all 0.3s;
@@ -367,7 +496,7 @@ li p{
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(44, 124, 244, 0.9);
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -393,6 +522,29 @@ li p{
 	width: 45%;
 }
 
+#about{
+	margin-top: 300px;
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#selfpic{
+	background-image: url('pics/myself.jpg') ;
+	background-size: auto 100%;
+	width: 350px;
+	height: 500px;
+
+	
+}
+
+#abouttext{
+	margin-left: 50px;
+	width: 60%;
+	margin-top: 150px;
+	font-size: 18px;
+}
 /*workchunk details*/
 .tag{
 	border-radius: 50px;
@@ -442,9 +594,13 @@ li p{
 		margin-left: 50px;
 		margin-right:50px;
 	}
+	.margin{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
 .center_blurb{
 		padding-left: 100px;
-	padding-right: 100px;
+		padding-right: 100px;
 	}
 
 }
@@ -504,7 +660,8 @@ a{
 }
 
 #dessa .title,#dessa .overlay_sub{
-	color: #286bc9;
+	/*color: #286bc9;*/
+	color:white;
 
 }
 
@@ -516,12 +673,20 @@ a{
 }
 
 #dessa .overlay{
-	/*background-color: rgb(108, 214, 207, 0.8);*/
-	background-color: rgba(248, 250, 255, 0.9);
+	/*background-color: rgb(108, 214, 207, 0.9);*/
+	background-color: rgb(64, 126, 214, 0.9);
+
+	/*background-color: rgba(248, 250, 255, 0.9);*/
 }
 #dessa.workitem:hover {
 	}
 
+#dessa_vid{
+	background: url("pics/dessa_gif.gif") center no-repeat;
+	background-size: 100% auto;
+
+	height: 500px;
+}
 #face2face{
 	background: url("pics/facetoface graphicbright.png") center center no-repeat;
 	background-size:50%;
@@ -564,9 +729,9 @@ a{
 	background-size:35%;
 }
 #foodora{
-	background: url("pics/foodora.png") center center no-repeat;
+	background: url("pics/foodora_05.jpg") center center no-repeat;
 	background-size:50%;
-	background-color: #ffffff;
+	background-color: #d60765;
 }
 
 #foodora .tag{

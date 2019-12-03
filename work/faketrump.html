@@ -4,8 +4,8 @@
 	<title>FakeTrump</title>
 	<link rel="stylesheet" type="text/css" href="../style2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +15,7 @@
 			<div id='toplinks'>
 				<a href="../index.html">Portfolio</a>
 				<!-- <a href="">Resume</a> -->
-				<a href="">About</a>
+				<a href="../about.html">About</a>
 			</div>
 		</div>
 	</ul>
@@ -27,8 +27,12 @@
 	<div class='row after_img'>
 		<ul>
 			<li>
+				<h3>Role</h3>
+				<p>Front-end developer, machine learning</p>
+			</li>
+			<li>
 				<h3>Team</h3>
-				<p> Helen Ngo </p>
+				<a href='https://www.linkedin.com/in/helen-ngo/?originalSubdomain=ca'><p> Helen Ngo </p></a>
 			</li>
 			<li>
 				<h3>Tools</h3>
@@ -42,16 +46,12 @@
 	</div>
 	<div class='row center_blurb'>
 
-			<h3 class='quote'>We trained a state-of-the-art model (GPT-2) to generate crazy realistic-sounding tweets from Donald Trump. We made a classifier to differentiate real from fake, and then developed a simple game to see how well humans can do vs machines.</h3>
+			<h3 class='quote'>We trained a state-of-the-art model (GPT-2) to generate crazy realistic-sounding tweets from Donald Trump. We made a classifier to differentiate real from fake, and then developed a simple game to see how well humans can do vs machines. <br> <br>
+				Check out the game <a href="https://faketrump.ai">here</a>, and our code <a href='https://github.com/DeepLearnI/trump_tweet_classifier'>here</a>.</h3>
 			<!-- <h3 class='quote'>Machine learning is a field where everyone does it their own way, how can we make software to support engineers that both is intuitive to use and feature-rich?</h3> -->
 		</div>
 	<div class='row center_blurb'>
 
-		<div class='left_text'>
-			<p>The game: <a href="https://faketrump.ai">faketrump.ai</a></p>
-			<p>Our code: <a href="#"> here</a></p>
-		</div>
-		
 		<div class='center_text'>
 			<h3> The Story </h3>	
 			<p class='center_text'>This project started from a crazy "what if we did this" and became a real game that garnered thousands of visits and discussion from around the world. GPT-2 had released a tune-able model and my coworker <a href="#">Helen</a> came up with the idea of generating Trump tweets, and everything just went from there. <br><br>
@@ -59,6 +59,16 @@
 			</p>
 		</div>
 
+		<div class='center_text'>
+			<h3> Results </h3>	
+			<p class='center_text'> 
+				Our game made the rounds through the machine learning community on Twitter and Reddit, and had over 17000 hits in 16 countries.
+
+			<p>
+
+		</div>
+	</div>
+	<div class='row center_blurb'>
 		<div class='center_text'>
 			<h3> Data and Model </h3>	
 			<p class='center_text'> 
@@ -76,21 +86,20 @@
 			<p>
 
 		</div>
-
-		<div class='center_text'>
-			<h3> Results </h3>	
-			<p class='center_text'> 
-				Our game made the rounds through the machine learning community on Twitter and Reddit, and had over 17000 hits in 16 countries.
-
-			<p>
-
+		
+		<div class='full_row_img' id='trump_complete'>
 		</div>
+		
+		<div class='full_row_img' id='trump_ingame'>
+		</div>
+		
+		
 	</div>
 	
 
 	<div id='workchunk margin show'>
 		<div id=work>
-				<a href='../dessa.html' class="workitem visible prod" id='dessa'>
+				<a href='dessa.html' class="workitem visible prod" id='dessa'>
 					<div class='overlay'>
 						<div class='overlay_text'>
 								<h3 class='title'>UX Design at Dessa</h3>
@@ -100,7 +109,7 @@
 					
 					<span class='tag'>UI/UX  |  Illustration</span>
 				</a>
-				<a href='../face2face.html' class="workitem visible ml" id='face2face'>
+				<a href='face2face.html' class="workitem visible ml" id='face2face'>
 					<div class='overlay'>
 						<div class='overlay_text'>
 								<h3 class='title'>FaceToFace</h3>
@@ -111,6 +120,6 @@
 
 				</a>
 		</div>
-</div>
+	</div>
 </body>
 </html>
