@@ -27,7 +27,7 @@ body{
 /*big chunks*/
 #topchunk{
 	margin-bottom: 80px;
-	# border: 1px solid green;
+	/*border: 1px solid green;*/
 }
 
 
@@ -37,7 +37,7 @@ body{
 	margin-top: 10vh;
 	margin-bottom: 20vh;
 	margin-left: -15px;
-	/*margin-right: -15px;*/
+	margin-right: -15px;
 	padding: 0px;
 	# opacity: 0;
 
@@ -49,7 +49,9 @@ body{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	max-width: 1170px;
+	max-width: 1200px;
+	/*border: 1px solid red;*/
+
 }
 
 .title_row.row{
@@ -598,7 +600,7 @@ li p{
 		margin-left: 50px;
 		margin-right: 50px;
 	}
-.center_blurb{
+	.center_blurb{
 		padding-left: 100px;
 		padding-right: 100px;
 	}
@@ -640,12 +642,17 @@ a{
 	padding-right: 0px;
 	margin-right: 0px
 	}
-}
 
-@media only screen and (max-width: 902px) {
 	.center_blurb{
 		padding-left: 20px;
 	padding-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	body, .margin{
+		margin-left: 20px;
+		margin-right:20px;
 	}
 }
 
