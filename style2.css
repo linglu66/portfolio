@@ -6,6 +6,10 @@
     text-rendering: optimizeLegibility;
 }
 
+:root {
+  --darkgrey: #4F5659;
+}
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -309,6 +313,7 @@ li p{
 }
 
 #topsmbody{
+	color: var(--darkgrey);
 	font-weight: 300;
 
 	font-size: 18px;
@@ -328,7 +333,7 @@ li p{
 }
 
 .topgrey{
-	color: grey;
+	color: var(--darkgrey);
 }
 
 .subtitle{
