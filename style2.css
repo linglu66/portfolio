@@ -18,7 +18,7 @@
 body{
 	margin: 0px;
 	padding-top: 0px;
-  margin-left: 100px;
+  	margin-left: 100px;
 	margin-right: 100px;
 	max-width: 1170px;
 	margin-left: auto;
@@ -611,6 +611,7 @@ li p{
 	
 }
 @media only screen and (max-width: 1200px) {
+	
 	.workitem{
 		width: 40%;
 
@@ -628,7 +629,7 @@ li p{
 		margin-left: 50px;
 		margin-right: 50px;
 	}
-	.center_blurb{
+	.center_blurb, .after_image{
 		padding-left: 100px;
 		padding-right: 100px;
 	}
@@ -656,10 +657,7 @@ a{
 		width: 33vw;
 		text-align: center;
 	}
-	.workitem.visible{
-		width: 80%;
-		margin-right: 0px;
-	}
+	
 
 	.row_img#face2face{
 		background-size: 50%;
@@ -673,12 +671,9 @@ a{
 
 	.center_blurb{
 		padding-left: 20px;
-	padding-right: 20px;
+		padding-right: 20px;
 	}
-	.workitem{
-		margin-left: 0px;
-
-	}
+	
 }
 
 @media only screen and (max-width: 480px) {
