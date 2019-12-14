@@ -48,7 +48,11 @@ body{
     # animation-delay: 3s;
 	animation-fill-mode: forwards;
 }
-#work{
+
+#mlwork{
+	margin-top:150px;
+}
+#work,#mlwork{
 
 	display: flex;
 	flex-direction: row;
@@ -56,6 +60,32 @@ body{
 	max-width: 1200px;
 	/*border: 1px solid red;*/
 
+}
+
+.mlworkitem{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.mltitle{
+	width: 100%;
+	display: block;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-weight: 300;
+	font-size: 30px;
+
+}
+.mltext{
+	border: 1px solid green;
+	display: flex;
+	flex-direction: column;
+	align-content: top;
+	margin-left: 30px;
 }
 
 .title_row.row{
@@ -124,6 +154,25 @@ body{
 }
 
 /*images*/
+.padding{
+	padding: 30px;
+	
+}
+.image{
+	/*border: 1px solid red;*/
+	/*border:1px solid lightgrey;*/
+	box-shadow:13px 15px 23px #E0E0E0;
+	margin-top: 30px;
+	margin-bottom: 20px;
+
+	width: 100%;
+}
+
+.mlworkimage{
+	height: 200px;
+	width: 200px;
+	border-radius:5px;
+}
 #trump_complete{
 	background: url("pics/trump_complete.png") center no-repeat;
 	background-size: 100% auto;
@@ -536,6 +585,8 @@ li p{
   align-items: center;
 }
 
+
+
 .workitem:hover .overlay {
   opacity: 1;
 }
@@ -768,6 +819,11 @@ a{
 
 	height: 450px;
 }
+
+.mlworkimage#face2face{
+	background-size:80%;
+
+}
 #face2face{
 	background: url("pics/facetoface graphicbright.png") center center no-repeat;
 	background-size:50%;
@@ -789,6 +845,10 @@ a{
 	background-size:25%;
 }
 
+.mlworkimage#faketrump{
+	background: url("pics/trumptweets.jpg") 100% auto no-repeat;
+	background-size: 100%;
+}
 #faketrump{
 	background: url("pics/trumptweets.jpg") center center no-repeat;
 	background-size:50%;
@@ -824,4 +884,10 @@ a{
 #foodora .overlay{
 	/*background-color: rgb(108, 214, 207, 0.8);*/
 	background-color: rgb(186, 26, 92, 0.9);
+}
+
+#foodora.row_img{
+	background-size:30%;
+
+
 }

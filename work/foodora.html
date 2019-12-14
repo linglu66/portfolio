@@ -68,17 +68,33 @@
 			<h3> 🔍 Research and Understanding our Users </h3>	
 			<p class='center_text'>
 
-				We designed a survey and gathered data from over 70 reddit users, to understand specifically why people use food delivery apps and their motivations at each stage. We wanted to see what the general thought process was (does dish matter more? or restaurant?) as well as any pain points in the journey.</br></br>
+				We designed a survey and gathered data from over 70 reddit users, to understand specifically why people use food delivery apps and their motivations at each stage. We wanted to see what the general thought process was (does dish matter more? or restaurant?) as well as any pain points in the journey.
+
+				<img src='../pics/foodora/survey_orderreasons.jpeg' class='image'>
 
 				The insights helped us define a few major use cases of Foodora that we could iterate on.
 
 			</p>
 			<h3> ✏️ Task Analysis + Definition </h3>	
-		We decided that browsing food/restaurant should be redesigned, as there were the most conflicts between the users preferences and how the interface works - as indicated by the research conducted.
+			
+			The purpose of the task analysis was to clearly define primary functions of the system, examine user goals, as well as their means to achieve them and whether the system allows them to do so in an efficient manner. From the results of our research, we concluded on 3 different main tasks.
 
+			<ul>
+				<li>Account Creation,  </li>
+				<li>Restaurant/food Selection</li>
+				<li>Checkout</li>
+
+			</ul>
+			We decided that browsing food/restaurant should be redesigned, as there were the most conflicts between the users preferences and how the interface works - as indicated by the research conducted.<br><br>
 			Taking a detailed look at the HTA charts:
 
-			<img src=''>
+			<img src='../pics/foodora/hta_foodselection.png' class='image padding'>
+			<p class='caption'> Hierarchical task analysis of the 'Food Selection' userflow </p>
+
+			<img src='../pics/foodora/hta_restaurantselection.png' class='image  padding'>
+			<p class='caption'> Hierarchical task analysis of the 'Restaurant Selection' userflow </p>
+
+
 			We wanted to merge the two user flows into one. It seemed unintuitive that the search functionality was completely different for food and restaurant.
 
 			<h3> 👔 Low-fidelity Prototyping </h3>
@@ -89,27 +105,46 @@
 				<li> Lack of discriminability and high information access cost</li>
 				<li> Information hierarchy in food cards did not conform to user preferences </li>
 			</ol>
+			<br>
+			<p>To target the first issue, we designed an interface that allowed users to freely switch between browsing food and restaurants.</p>
+			<img src='../pics/foodora/focus_restaurantSearch.png' class='image'>
+			<p>To reduce the information access cost to the checkout, we emphasized the total cost and time to delivery in the checkout hover card.</p>
+			<img src='../pics/foodora/focus_checkout.png'  class='image'>
+			<p>We also redesigned the foodcards so that it was obvious which items were required to complete the order and which weren't, as well as move required items to the top.</p>
+			<img src='../pics/foodora/focus_card.png' class='image'>
 			
-
-			<img src=''>
-			<img src=''>
-			<img src=''>
-
-			<ul>
-				<li>Users wanted more ways to directly assess their experiments</li>
-				<li>In terms of workflows, there were some diverging preferences like whether to view all experiments together, or have separate views for ongoing/finished/queued</li>
-				<li>The command line integration was clumsy</li>
-
-			</ul>
 
 			
 
-			<h3> 📋 Testing our Prototype </h3>
+			<!-- <h3> 📋 Testing our Prototype </h3>
 			In addition to user preferences, there were some restrictions and additional functionalities to be designed for in the project scope.
 
 			<h3> 🧐 Takeaways </h3>
-			In addition to user preferences, there were some restrictions and additional functionalities to be designed for in the project scope.
+			In addition to user preferences, there were some restrictions and additional functionalities to be designed for in the project scope. -->
 
 		</div>
+	</div>
+	<div id=work>
+		<a href='faketrump.html' class="workitem visible ml left" id='faketrump'>
+			<div class='overlay'>
+				<div class='overlay_text'>
+						<h3 class='title'>faketrump.ai</h3>
+						<p class='overlay_sub'>Generating, classifying, and gameify-ing real vs. fake Trump tweets</p>
+				</div>
+			</div>
+			<div class='tag'>ML  |  Front-End </div>
+		</a>
+		
+		<a href='face2face.html' class="workitem visible ml" id='face2face'>
+			<div class='overlay'>
+				<div class='overlay_text'>
+						<h3 class='title'>FaceToFace</h3>
+						<p class='overlay_sub'>Transforming facial emotions with GANs</p>
+				</div>
+			</div>
+			<div class='tag'>Data  |  GANs</div>
+
+		</a>
+	</div>
 </body>
 </html>
