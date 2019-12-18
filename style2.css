@@ -816,7 +816,7 @@ a{
 #dessa{
 	/*background: url("pics/1xpreview_dessa.png") bottom center no-repeat;*/
 	background: url("pics/0_5preview_dessa.png") bottom center no-repeat;
-
+	width: 100%;
 	background-size: auto 100%;
 	background-color: #F8FAFF;
 }
@@ -919,5 +919,33 @@ a{
 #foodora.row_img{
 	background-size:30%;
 
+
+}
+
+#motion{
+	background: url("pics/motion/squares_overlap.gif") center center no-repeat;
+	background-size:50%;
+	width: 100%;
+	/*width:300px;*/
+	background-color: #1600ff;
+}
+#motion::before{
+
+}
+
+#foodora .tag{
+	/*background-color: #D70F64;*/
+	background-color: #e04a86;
+	color: white;
+}
+
+#motion .overlay{
+	/*background-color: rgb(108, 214, 207, 0.8);*/
+	background-color: rgb(22, 0, 255, 0.9);
+}
+
+#motion.row_img{
+	width: 100%;
+	background-size: 35%;
 
 }
