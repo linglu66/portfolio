@@ -923,11 +923,11 @@ a{
 }
 
 #motion{
-	background: url("pics/motion/squares_overlap.gif") center center no-repeat;
-	background-size:50%;
+	background: url("pics/motion/bounce_2.gif") center center no-repeat;
+	background-size:40%;
 	width: 100%;
 	/*width:300px;*/
-	background-color: #1600ff;
+	background-color: #096163;
 }
 #motion::before{
 
@@ -941,11 +941,11 @@ a{
 
 #motion .overlay{
 	/*background-color: rgb(108, 214, 207, 0.8);*/
-	background-color: rgb(22, 0, 255, 0.9);
+	background-color: rgb(9, 97, 99, 0.9);
 }
 
 #motion.row_img{
 	width: 100%;
-	background-size: 35%;
+	background-size: 30%;
 
 }
