@@ -818,7 +818,7 @@ a{
 	background: url("pics/0_5preview_dessa.png") bottom center no-repeat;
 	width: 100%;
 	background-size: auto 100%;
-	background-color: #F8FAFF;
+	background-color: #061A40;
 }
 
 #dessa .title,#dessa .overlay_sub{
@@ -836,7 +836,7 @@ a{
 
 #dessa .overlay{
 	/*background-color: rgb(108, 214, 207, 0.9);*/
-	background-color: rgb(64, 126, 214, 0.9);
+	background-color: rgb(6, 24, 64, 0.9);
 
 	/*background-color: rgba(248, 250, 255, 0.9);*/
 }
