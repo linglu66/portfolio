@@ -4,15 +4,14 @@
 	<title>Ling Lu</title>
 	<link rel="stylesheet" type="text/css" href="style2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
+		
 		<link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 
 </head>
 <body>
 	<ul id='topnav'>
 		<div class='margin'>
-			<a href='../index.html'id ='navtitle'>Ling Lu</a>
+			<a href='index.html'id ='navtitle'>Ling Lu</a>
 			<div id='toplinks'>
 				<a href="#" id='active_link' >Portfolio</a>
 				<!-- <a href="">Resume</a> -->
@@ -32,13 +31,7 @@
 		</div>
 	</div>
 	<div id=workchunk>
-		<!-- <div id=navbar>
-			<ul id=navlist>
-				<li class='navsel one active' id=firstnavlink onclick="filterSelection('all')"><div >All Work</div></li>
-				<li class='navsel two'onclick="filterSelection('prod')"><div>Product Design</div></li>
-				<li class='navsel three' id=lastnavlink onclick="filterSelection('ml')" ><div>Machine Learning</div></li>
-			</ul> 
-		</div> -->
+	
 		<div id=work>
 			<a href='work/dessa.html' class="workitem prod left" id='dessa'>
 				<div class='overlay'>
@@ -48,7 +41,6 @@
 					</div>
 				</div>
 				
-				<!-- <span class='tag'>UI/UX  |  Illustration</span> -->
 			</a>
 	<!-- 		<a href='work/face2face.html' class="workitem ml " id='face2face'>
 				<div class='overlay'>
@@ -85,7 +77,7 @@
 
 		<div id='mlwork'>
 			<div class="mltitlesection">
-			<h2 class='mltitle'>Other work</h2>
+				<h2 class='mltitle'>Other work</h2>
 				<p id=topsmbody>Some machine learning shenanigans I've had the pleasure of partaking in.</p>
 			</div>
 			<!-- <p id=topsmbody> Some interesting machine learning projects I've had the pleasure of working on</p> -->
@@ -98,8 +90,8 @@
 
 				<div class="mlworkimage" id='faketrump'></div>
 				<div class='mltext'>
-					<h2>faketrump.ai </h2>
-					Generating, classifying, and gameify-ing real vs. fake Trump tweets
+					<h2 class='mlsubtitle'>faketrump.ai </h2>
+					Generating, classifying, and gameify-ing real vs. fake Trump tweets 
 				</div>
 			</div>
 			</a>
@@ -109,7 +101,7 @@
 				<div class="mlworkimage" id='face2face'></div>
 
 				<div class="mltext">
-					<h2> Face2Face</h2>
+					<h2 class='mlsubtitle'> Face2Face</h2>
 
 					Transforming facial emotions with Generative Adversarial Networks (CGANs)
 				</div>
@@ -120,57 +112,57 @@
 
 
 
-	<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("workitem");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+<script>
+	filterSelection("all")
+	function filterSelection(c) {
+	  var x, i;
+	  x = document.getElementsByClassName("workitem");
+	  if (c == "all") c = "";
+	  for (i = 0; i < x.length; i++) {
+	    w3RemoveClass(x[i], "show");
+	    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+	  }
+	}
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+	function w3AddClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+	    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+	  }
+	}
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
+	function w3RemoveClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+	    while (arr1.indexOf(arr2[i]) > -1) {
+	      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+	    }
+	  }
+	  element.className = arr1.join(" ");
+	}
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("navlist");
-var btns = btnContainer.getElementsByClassName("navsel");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+	// Add active class to the current button (highlight it)
+	var btnContainer = document.getElementById("navlist");
+	var btns = btnContainer.getElementsByClassName("navsel");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function(){
+	    var current = document.getElementsByClassName("active");
+	    current[0].className = current[0].className.replace(" active", "");
+	    this.className += " active";
+	  });
+	}
 
-var links = document.querySelectorAll("li"),
-    pd = function(e) {
-        e.preventDefault ? e.preventDefault() : e.returnValue = false;
+	var links = document.querySelectorAll("li"),
+	    pd = function(e) {
+	        e.preventDefault ? e.preventDefault() : e.returnValue = false;
 
-    };
+	    };
 
-links.addEventListener('click', pd, false);
+	links.addEventListener('click', pd, false);
 </script>
 
 
