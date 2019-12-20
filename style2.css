@@ -28,6 +28,27 @@ body{
 	margin-right: auto;
 }
 /*big chunks*/
+
+.gallery{
+	display: flex;
+	margin-left: -5px;
+	margin-right: -5px;
+	flex-wrap: wrap;
+}
+.galleryItem{
+	margin-top: 10px;
+	height: 350px;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.galleryItem img{
+	height: 102%;
+}
 #topchunk{
 	margin-bottom: 80px;
 	/*border: 1px solid green;*/
@@ -734,6 +755,16 @@ li p{
 
 }
 
+
+#gif_1{
+	background-color: #FD0178;
+}
+#gif_2{
+	background-color: #3D518C;
+}
+#gif_3{
+	background-color: #096163;
+}
 a{
 	color: blue;
 	text-decoration: none;
