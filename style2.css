@@ -772,17 +772,16 @@ a{
 
 #dessa{
 	/*background: url("pics/1xpreview_dessa.png") bottom center no-repeat;*/
-	background: url("pics/0_5preview_dessa.png") bottom center no-repeat;
+	background: url("pics/0_5preview_dessa.png") top center no-repeat;
 	width: 100%;
-	background-size: auto 100%;
+	background-size: auto 110%;
 	background-color: #061A40;
 }
 
 #dessa.row_img{
 	/*width: 100%;*/
-	background-size: 100% auto;
+	/*background-size: 100% auto;*/
 	background-color: white;
-
 
 
 }
@@ -923,6 +922,10 @@ a{
 
 
 @media only screen and (max-width: 902px) {
+	#foodora.row_img{
+		background-size: 50%;		
+	}
+
 	.mlworkimage{
 		height: 150px;
 		width: 150px;
@@ -964,8 +967,18 @@ a{
 	}
 	
 }
+@media only screen and (max-width: 750px) {
+	#motion, #motion.row_img{
+		background-size: 50%;
 
+	}
+
+}
 @media only screen and (max-width: 480px) {
+	#motion{
+		background-size: 70%;
+
+	}
 	#about{
 		margin-top: 120px;
 		display: flex;
