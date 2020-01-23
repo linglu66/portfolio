@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reach: Student Mentorship App</title>
+	<link rel="stylesheet" type="text/css" href="../style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154730694-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-154730694-1');
+	</script>
+</head>
+<body>
+	<ul id='topnav'>
+		<div class='margin'>
+			<a href='../index.html'id ='navtitle'>Ling Lu</a>
+			<div id='toplinks'>
+				<a href="../index.html">Portfolio</a>
+				<!-- <a href="">Resume</a> -->
+				<a href="../about.html">About</a>
+			</div>
+		</div>
+	</ul>
+	<div class='row title_row'>
+		<h1>How can we create a sense of community through mentorship?</h1>
+		<p class='subtitle'>Designing a mentorship experience for the student body</p>
+	</div>
+
+	<div class='row_img' id='reach'></div>
+	<div class='row after_img'>
+		<ul>
+			<li>
+				<h3 class ='grid_label'>Role</h3>
+				<p> Research, Ideation, Visuals, Illustrator </p>
+			</li>
+			<li>
+				<h3 class ='grid_label'>Tools</h3>
+				<p> Sketch, Flow </p>
+			</li>
+			<li>
+				<h3 class ='grid_label'>Time</h3>
+				<p> 2 weeks </p>
+			</li>
+		</ul>
+	</div>
+	<div class='row center_blurb'>
+		<h3 class='quote'>
+      <!-- University can be a tough time - students are adjusting to a new life outside of their comfort zone.
+      But the guiding hand of an experienced mentor can make all the difference. -->
+			Your school wants to strengthen the community by encouraging experienced students to connect with new students and help them adjust to campus life.
+			<br><br>Design an experience that allows mentors and mentees to discover each other. Consider the needs of both mentors and mentees, including how
+			someone may become a mentor and how to connect mentors to mentees.
+    </h3>
+
+	</div>
+	<div class='row center_blurb'>
+		<div class='center_text'>
+			<h3> The Problem </h3>
+
+
+			<p class='center_text'>
+        <!-- Your school wants to strengthen the community by encouraging experienced students to connect with new students and help them adjust to campus life.
+        Design an experience that allows mentors and mentees to discover each other. Consider the needs of both mentors and mentees, including how
+        someone may become a mentor and how to connect mentors to mentees. -->
+				<!-- <br><br> -->
+        <!-- There are a lot of disjointed mentorship systems at UofT that fall short in the experience department.
+
+        I wanted to design a new mentorship experience that would make it easy for students to find mentors that match their interests, while simplifying
+        the logistics of relationship management and scheduling. -->
+
+				Mentorship is an interesting problem to think about in the university context
+				- students are going through a huge growth phase and juggling a million things at once (I would know).
+				Although we have more experienced students, many of them are still growing, meaning we have students who wish to both have mentors and be a mentor to someone else.
+				It's also easy for students to feel lonely, with a school as big as UofT. Mentorship is a great way to create meaningful relationships in the student community
+				<br><br>
+				I wanted to design a mentorship experience that makes finding a mentor easy and comfortable for mentees, and smooth out the relationship management
+				and logistics scheduling for mentors.
+
+			<!-- How can we make software to support engineers that is flexible, intuitive to use and feature-rich? -->
+			</p>
+      <!-- <img src="../pics/atlas/wireframes.png", width="100%s"> -->
+
+		</div>
+
+  </div>
+
+
+
+	<div class='row center_blurb'>
+		<div class='center_text'>
+			<h2> Understanding our users </h2>
+			<p class='center_text'>
+        Before we start designing, it's important to understand more about our users and the problem space.
+				To empathize with our users, I wanted to paint a general picture of a student user.
+        <br><br>
+        <!-- <ul>
+          <li>
+            What kind of lifestyle do they live?
+          </li>
+          <li>
+            What do they think about?
+          </li>
+          <li>
+            What stresses them out?
+          </li>
+          <li>
+            What makes them happy?
+          </li>
+          <li>
+            How do they interact with technology in their lives?
+          </li>
+        </ul> -->
+
+				<img src="../pics/reach/student_profile.jpeg", width="100%">
+
+
+			</p>
+			<h3> ✏️ User Interviews </h3>
+        To get more clarity on the mindsets and goals of mentors and mentee students, I held open-ended interviews with a few mentors and mentees active in the
+        WISE (Women in Science and Engineering) and Industrial Engineering mentorship programs. I also spoke with a co-ordinator who runs one of the mentorship
+				programs mentioned.
+
+        <br><br>
+        Questions
+			<ul class='tchart'>
+
+				<ul>
+          <li>What does mentorship mean to you?</li>
+          <li>Why do you want to be a mentor?</li>
+          <li>What do you want to offer as a mentor?</li>
+          <li>What is challenging about being a mentor?</li>
+          <li>What is enjoyable about being a mentor?</li>
+        </ul>
+
+        <ul>
+          <li>What does being a mentee mean to you?</li>
+          <li>What do you expect from your mentorship?</li>
+          <li>What do you want to learn from your mentor?</li>
+          <li>How do you currently find mentors?</li>
+          <li>Why do you seek mentorship?</li>
+        </ul>
+			</ul>
+
+
+
+			<h3> 🚶🏽‍ User Profiles </h3>
+			I condensed the findings from the interviews into some user profiles.
+			<h4>Mentors</h4>
+			Motivations:
+			<ul>
+				<li>Give mentorship out of feelings of altruism</li>
+				<li>Want to give back to the student community, make a positive impact</li>
+				<li>Empathize with newer students, they know how it feels and want to help them</li>
+				<li>Enjoy seeing their mentee progress</li>
+			</ul>
+			Challenges:
+			<ul>
+				<li>Really busy, and mentorship is a big time commitment with current systems</li>
+				<li>Sometimes it's not a good match with the mentees</li>
+			</ul>
+
+			<h4>Mentees</h4>
+			Motivations:
+			<ul>
+				<li>Looking for a reliable source of guidance</li>
+				<li>Want to meet new people</li>
+				<li>Feeling lost/confused about university</li>
+			</ul>
+			Challenges:
+			<ul>
+				<li>Sometimes mentor doesn't know how to answer their questions</li>
+				<li>Hard to align schedule</li>
+				<li>Don't feel like they really 'connected'</li>
+			</ul>
+
+      <!-- <h3> 🤕 Pain Points </h3>
+      We want to reduce the challenges users have to their core components, so we can build solutions that solve the problems from the root.
+      <br><br>
+      Mentorship can be awkward for students. For one, it may be difficult for new students to even seek guidance. Many students related with
+      idea of 'You don't know what you don't know'. What do you even want to ask about?
+
+<br><br>
+      It can also be difficult to find the right match. Either your mentor doesn't really know how to answer your questions, maybe you don't have the same
+      level of commitment in mind, or your schedules never match up - logistics can be hard to figure out. Sometimes, you might feel like you just don't
+			click with your mentor/mentee.
+<br><br>
+			For mentors, there seems to be a high barrier to entry. Mentors have to fill out a detailed form, writing paragraphs about their experience and why they'd
+			be a good mentor. Afterwards, they would be interviewed and matched with a mentee. A good question to consider is how can we maintain balance
+			between the detail of mentor information and the ease of mentor onboarding. -->
+
+
+		</div>
+	</div>
+
+
+		<div class='row center_blurb'>
+			<div class='center_text'>
+      <h2> Defining the problem </h2>
+      Based on the interviews, my understanding of the users, and pain points that were revealed, I scoped the problem space down to a core set of issues
+			that the experience should handle.
+
+      <h4>1. Help mentees find mentors with expertise in the areas they seek guidance in</h4>
+			Pain points:
+			<ul>
+				<li>Mentor not knowing how to answer their questions</li>
+				<li>Mentor does not have similar experiences to what they're going through</li>
+				<li>Mentees unsure of what they want to learn about</li>
+			</ul>
+
+<!--
+    - topic expertise
+    - demographic match - (i.e. 4th year, industrial engineering, also chinese-canadian)
+    - extra curriculars/interests -->
+		<h4>2. Help mentors easily express what they have specific experience in/topics they want to mentor about</h4>
+		Pain points:
+		<ul>
+			<li>Long onboarding process for mentors, filling in lots of Q&A</li>
+			<li>Not sure what to write, just want to help out</li>
+			<li>Don't remember all the things they want to mentor about when signing up</li>
+		</ul>
+
+		<!-- - having a rich profile -->
+    By being specific and making more detailed profiles, we can better connect the right people together.
+		<h4>3. Balance demand and supply between mentors/mentees</h4>
+		Pain points:
+		<ul>
+			<li>Mentor receving a lot of requests, it's overwhelming</li>
+			<li>Mentor don't know which mentees they can actually give good advice to</li>
+			<li>Mentees feel like they are asking for too much</li>
+		</ul>
+		<!-- - imbalance of power - mentees may feel like they're asking too much of mentors or being a burden -->
+		<!-- - mentors have too many mentees to handle -->
+		<!-- <h4>4. Create accountability in both parties</h4>
+		Pain points:
+		<ul>
+			<li>Mentor/meeting bailed on meeting</li>
+		</ul> -->
+		<!-- - making sure that users are accountable - making mentorship a formal request process
+				- mentee sends request and message, while being able to view the mentor's available time commitment , preferred modes of communication
+				- mentor can choose to start chatting or accept/decline the invite
+		- holding mentors/mentees accountable for agreed meets -->
+
+			<p class='center_text'>
+
+			</p>
+</div>
+</div>
+<div class='row_img' id='reach2'></div>
+
+<div class="wide_block" >
+
+
+</div>
+<div class='row center_blurb'>
+
+<div class='center_text'>
+			<h2> ✨ Design Solution</h2>
+
+
+			Based on the problem definition, I had a decent idea of the main functionalities that the application should have.
+			I outlined a rough task flow in Sketch first.
+		</div>
+	</div>
+
+	<div class='row_img shrink' >
+		<img src="../pics/reach/flow.png", width="100%" max-width>
+	</div>
+
+	<div class="wide_block" ></div>
+	<div class="wide_block" ></div>
+	<div class="wide_block" ></div>
+<br><br><br>
+
+
+		<div class='row center_blurb'>
+
+		<div class='center_text'>
+			<!-- <img src="../pics/reach/flow.png", width="100%"> -->
+
+			From there, I fleshed out some wireframe solutions for the main problems.
+			<br><br>
+			<h4>1. Help mentees find mentors with expertise in the areas they seek guidance in</h4>
+
+		</div>
+	</div>
+<div class="img_row_block">
+	<!-- <ul> -->
+	<img src="../pics/reach/browse_1.png">
+	<img src="../pics/reach/browse_2.png">
+	<img src="../pics/reach/browse_3.png">
+	<img src="../pics/reach/browse_4.png">
+	<!-- </ul> -->
+
+</div>
+	<div class='row center_blurb'>
+		<div class='center_text'>
+			From the interviews, I learned that mentees have a hard time looking for a mentor that would be a good match for them.
+			Working from the mentee side, I designed a browsing system that accurately reflected the selection flow o
+
+	<h4>2. Help mentors easily express what they have specific experience in/topics they want to mentor about</h4>
+</div>
+</div>
+
+	<div class="img_row_block">
+		<!-- <ul> -->
+		<img src="../pics/reach/onboard_1.png">
+		<img src="../pics/reach/onboard_2.png">
+		<img src="../pics/reach/onboard_3.png">
+		<img src="../pics/reach/onboard_4.png">
+		<!-- </ul> -->
+
+	</div>
+	<div class='row center_blurb'>
+		<div class='center_text'>
+
+			<h4>3. Balance demand and supply between mentors/mentees</h4>
+	</div>
+</div>
+	<div class="img_row_block">
+		<!-- <ul> -->
+		<img src="../pics/reach/request_1.png">
+		<img src="../pics/reach/request_2.png">
+		<img src="../pics/reach/request_3.png">
+		<!-- </ul> -->
+
+	</div>
+<div class='row center_blurb'>
+
+<div class='center_text'>
+
+
+      <h2> ✨ High Fidelity</h2>
+      <h3> Style Guide </h3>
+			<img src="../pics/reach/style_guide.png", width="80%">
+
+</div>
+</div>
+<div class="img_row_block">
+	<!-- <ul> -->
+	<img src="../pics/reach/signin_white.png">
+	<img src="../pics/reach/requests.png">
+
+	<img src="../pics/reach/discover_1.png">
+	<img src="../pics/reach/discover.png">
+	<!-- </ul> -->
+
+</div>
+<div class='row center_blurb'>
+
+<div class='center_text'>
+
+			<!-- <h3> 🤔 Learnings and Reflections </h3>
+
+			This experience really pushed the importance of good, regular communication in design work. I think in a startup, it can be tempting to just pump through tasks for the sake of completion, but I realized that establishing a strong cross-team collaboration mindset is immensely beneficial.
+			<br><br>
+
+			Involving PMs and developers more throughout the process would have helped us avoid bumps like miscommunication about the feasibility of certain features, or the small issues arising that led us astray from the design.
+
+			<br><br>
+			As a designer I also learned to be more detailed in how I pass on my designs - every screen should have a few copies of how they would look on different sizes, edge cases like really long text boxes or empty states also need to be designed since people do not read minds - just cause' I know how it looks, if it's not visible, there's no guarantee that it'll turn out how it's expected to be. -->
+
+		</div>
+
+	</div>
+	<div id=workchunk>
+	<div id=work>
+
+		<a href='foodora.html' class="workitem visible prod" id='foodora'>
+				<div class='overlay'>
+					<div class='overlay_text'>
+							<h3 class='title'>Foodora UX Research & Redesign</h3>
+							<p class='overlay_sub'>Functional analysis and low-level redesign</p>
+					</div>
+				</div>
+				<!-- <div class='tag'>UI/UX | Human Factors Analysis</div> -->
+
+			</a>
+	<!-- 	<a href='faketrump.html' class="workitem visible ml left" id='faketrump'>
+			<div class='overlay'>
+				<div class='overlay_text'>
+						<h3 class='title'>faketrump.ai</h3>
+						<p class='overlay_sub'>Generating, classifying, and gameify-ing real vs. fake Trump tweets</p>
+				</div>
+			</div>
+		</a>
+
+		<a href='dessa.html' class="workitem visible  prod" id='dessa'>
+			<div class='overlay'>
+				<div class='overlay_text'>
+						<h3 class='title'>UX Design at Dessa</h3>
+						<p class='overlay_sub'>Designing machine learning software</p>
+				</div>
+			</div>
+
+		</a> -->
+	</div>
+	</div>
+</body>
+</html>
