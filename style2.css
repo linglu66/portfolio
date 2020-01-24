@@ -929,7 +929,7 @@ a{
 }
 
 #reach{
-	background: url("pics/reach/solid_banner_white.png") bottom center no-repeat;
+	background: url("pics/reach/solid_banner_updated.png") bottom center no-repeat;
 
 	/* background: url("pics/reach/reach_bg_yellow.png") center center no-repeat; */
 	background-size: auto 100% ;
@@ -950,6 +950,16 @@ a{
 .shrink{
 	width: 80%;
 	margin-left: 100px;
+}
+.wide_tchart{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-weight: 200;
+	font-size: 16px;
+}
+.wide_tchart div{
+	width: 45%;
 }
 .img_row_block{
 	width: 100%;
