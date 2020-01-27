@@ -383,6 +383,9 @@ a .mltext{
 }
 .center_blurb{
 	display: flex;
+	font-weight: 200;
+	font-size: 20px;
+	
 	/*justify-content: center;*/
 	/*align-items: center;*/
 	padding-left: 200px;
