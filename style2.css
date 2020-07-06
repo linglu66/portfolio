@@ -1,8 +1,8 @@
 *{
 	font-family: 'Mukta',"Segoe UI",sans-serif;
-    /*transition: all 0.5s ease;*/
+    transition: all 0.5s ease;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
 }
 
 :root {
@@ -165,7 +165,7 @@ a .mltext{
 .row{
 	height: auto;
 	margin-left: auto;
-	margin-right:
+	margin-right:auto;
 	/*border: 1px solid black;*/
 	max-width: 1170px;
 	padding-top: 80px;
@@ -330,17 +330,11 @@ a .mltext{
 	list-style: none;
 
 	padding: 20px 0px;
-	/*background-color: blue;*/
-
-
-
 }
 
 
 .after_img li{
-	/*border: 1px solid green;*/
 	width: 150px;
-
 }
 
 .free_block {
@@ -385,7 +379,7 @@ a .mltext{
 	display: flex;
 	font-weight: 200;
 	font-size: 20px;
-	
+
 	/*justify-content: center;*/
 	/*align-items: center;*/
 	padding-left: 200px;
@@ -614,10 +608,6 @@ li p{
 .workitem{
 	height: 300px;
 	width: 35%;
-
-}
-
-.workitem{
 	background-color: blue;
 
 	/*margin-right: 20px;*/
@@ -938,7 +928,6 @@ a{
 #reach{
 	background: url("pics/reach/solid_banner_updated.png") bottom center no-repeat;
 
-	/* background: url("pics/reach/reach_bg_yellow.png") center center no-repeat; */
 	background-size: auto 100% ;
 	background-color:  #3EAA91;
 
@@ -951,6 +940,22 @@ a{
 	/* background-size: 60%; */
 
 }
+
+#cash{
+	background: url("pics/cash/cash_banner_2.png") bottom center no-repeat;
+
+	background-position: center;
+	background-size: 100% auto ;
+	background-color:  #00D632;
+
+
+}
+#cash .overlay{
+	/*background-color: rgb(108, 214, 207, 0.8);*/
+	background-color: rgba(11, 107, 131, 0.9);
+}
+
+
 .block{
 	display: flex;
 }
@@ -988,10 +993,21 @@ a{
 	background-color:  #fdfff5;
 	/* max-width: 1900px; */
 	/* margin: auto; */
-
-
-
 }
+
+.fade-in-section {
+	opacity: 0;
+	transform: translateY(20vh);
+	visibility: hidden;
+	transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+	will-change: opacity, visibility;
+	}
+	.fade-in-section.is-visible {
+	opacity: 1;
+	transform: none;
+	visibility: visible;
+	}
+
 
 #face2face .tag{
 	background-color: #02a5db;
