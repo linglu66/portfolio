@@ -1,0 +1,27 @@
+Arguments:
+  /usr/local/bin/node /Users/llu/.yarn/bin/yarn.js add aos@next
+
+PATH:
+  /Users/llu/.yarn/bin:/Users/llu/.config/yarn/global/node_modules/.bin:/Users/llu/miniconda3/bin:/Users/llu/miniconda3/condabin:/Users/llu/Development/topsoil/bin:/Users/llu/bin:/usr/local/sbin:/usr/local/bin:/Users/llu/.cargo/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/usr/local/munki:/Users/llu/.rvm/gems/ruby-2.6.5/bin:/Users/llu/.rvm/gems/ruby-2.6.5@global/bin:/Users/llu/.rvm/rubies/ruby-2.6.5/bin:/Users/llu/.rvm/bin:/Users/llu/Development/go/bin
+
+Yarn version:
+  1.22.4
+
+Node version:
+  12.18.1
+
+Platform:
+  darwin x64
+
+Trace:
+  Error: getaddrinfo ENOTFOUND artifactory.global.square
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+
+npm manifest:
+  No manifest
+
+yarn manifest:
+  No manifest
+
+Lockfile:
+  No lockfile
