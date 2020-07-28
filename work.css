@@ -3,6 +3,8 @@
     transition: all 0.5s ease;
     -webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	font-weight: 300;
+
 
 }
 
@@ -72,6 +74,9 @@
     font-size: 20px;
     margin: 0;
 
+}
+a .overlay_sub{
+	color:white;
 }
 .overlay_text{
 	padding: 10px 15px;
@@ -190,6 +195,7 @@
 
 }
 .center_column{
+	width: 100%;
 	margin-bottom: 50px;
 	display:flex;
 	align-items: center;
@@ -263,6 +269,7 @@
     width: 150px;
     padding:0px;
 	margin:0px;
+	font-weight: 300;
 }
 
 .grid_label{
@@ -326,6 +333,9 @@ h1{
 
 }
 
+li{
+	font-weight: 300;
+}
 .full_column p{
     padding: 0px;
     margin-top: 0px;
@@ -350,11 +360,26 @@ h1{
 .left{
 	justify-content: left;
 }
+
+.rounded{
+	border-radius: 40px;
+}
+
+.bottom_margin{
+	margin-bottom:200px;
+}
+.left_margin{
+	margin-left:100px;
+}
 /* Images */
 .img{
 	width: 100%;
 	border-radius: 10px;
 	box-shadow: 0px 20px 30px #E9EBEE;
+}
+
+.no_shadow{
+	box-shadow: none;
 }
 
 .imgcontainer,.semi_full{
@@ -375,6 +400,15 @@ h1{
     /* background-size: 100% auto; */
     background-size: auto 100% ;
 	background-color:  #3EAA91;
+}
+
+
+
+#dessa{
+	background: url("pics/0_5preview_dessa.png") top center no-repeat;
+    /* background-size: 100% auto; */
+    background-size: auto 100% ;
+	background-color:  #F7FAFF;
 }
 
 @media only screen and (max-width: 1200px) {
