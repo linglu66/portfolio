@@ -4,7 +4,7 @@
     -webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	font-weight: 300;
-
+	/* border:1px solid green; */
 
 }
 
@@ -281,6 +281,25 @@ a .overlay_sub{
 }
 
 /* Fonts */
+.text_box{
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+
+}
+b{
+	font-weight: 800;
+}
+
+li b{
+	margin-right: 5px;
+}
+.highlight{
+	background-color: yellow;
+}
 .title_row h1{
 	margin-bottom: 10px;
 }
@@ -296,6 +315,7 @@ h1{
 
 }
 .section_header h2{
+	display: inline;
 	margin: 0px;
 	margin-bottom: 20px;
 	font-size:30px;
@@ -330,6 +350,7 @@ h1{
 	justify-content: center;
 	align-content: center;
 	height: 100%;
+	flex-direction: row;
 
 }
 
@@ -350,6 +371,15 @@ li{
 
 }
 /* colours */
+.tb-blue{
+	background-color: #C9EBFF;
+	color:#2f80ed;
+}
+
+.tb-purp{
+	background-color: #EBECFF;
+	color: #5979ED;
+}
 .lightblue{
     background-color: #F3F8FD;
 }
@@ -410,6 +440,17 @@ li{
     background-size: auto 100% ;
 	background-color:  #F7FAFF;
 }
+
+#cash{
+	background: url("pics/cash/cash_banner_2.png") bottom center no-repeat;
+
+	background-position: center;
+	background-size: 100% auto ;
+	background-color:  #00D632;
+
+
+}
+
 
 @media only screen and (max-width: 1200px) {
 	.margin,.margin-nav{
