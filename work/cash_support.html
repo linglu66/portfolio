@@ -2,9 +2,9 @@
 <html>
 
 <head>
-	<title>UX at Dessa</title>
+	<title>Cash App Support</title>
 	<link rel="stylesheet" type="text/css" href="../work.css">
-	<link rel="icon" type="image/png" href="../pics/reach/favicon.png">
+	<link rel="icon" type="image/png" href="../pics/cash/favicon.png">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800&display=swap"
@@ -254,7 +254,7 @@
 				<div class="full_column">
 					<div class="section_header">
 						<div class="subtitle">Let's take a closer look.</div>
-						<h2>Design Explorations</h2>
+						<h1>Design Explorations</h1>
 
 					</div>
 				</div>
@@ -329,38 +329,13 @@
 		</div>
 	</div>
 
-	<div class='full_row' id='cash' data-aos="fade-up"></div>
-
-	<div class="split_row white " data-aos="fade-up">
-
-		<div class="margin ">
-			<div class="full_column">
-				<div class="section_header">
-					<div class="subtitle">Information Architecture</div>
-					<h2>Result</h2>
-
-				</div>
-			</div>
-			<div class="full_column">
-				After a few rounds of iterating, I landed on an interface that was much more cohesive and supported the
-			complex use cases that machine learning engineers required. <br><br>
-
-			Here are the key features of the final design:
-			<ol>
-				<li> An overview page that gives users an instant, visual assessment over their experiments</li>
-				<li> A new style that better highlights the high important information and lets information of lower
-					priority fade into the background while keeping their presence</li>
-				<li> Collaborative features like commenting and project descriptions for inter-team functionality </li>
-			</ol>
-			</div>
-        </div>
-    </div>
+	<div class='full_row' id='cash'></div>
 
     <div class="split_row lightblue">
         <div class="margin " data-aos="fade-up">
 			<div class="full_column">
 				<div class="section_header">
-					<div class="subtitle">Information Architecture</div>
+					<div class="subtitle">Solution</div>
 					<h2>First Iteration</h2>
 
 				</div>
@@ -373,6 +348,85 @@
                 </div>
             </div>
         </div>
+        <div class="margin " data-aos="fade-up">
+
+            <div class="full_column">
+                <div class="section_header">
+					<div class="subtitle">Iterating on designs</div>
+
+                    <h1>Gathering Feedback</h1>
+
+                </div>
+            </div>
+            <div class="full_column">
+                I held a design critique and some informal user tests to get feedback on the first iteration. Some issues that surfaced:
+
+            </div>
+        </div>
+        <div class="margin " data-aos="fade-up">
+
+            <div class="full_column">
+                <div class="section_header">
+					<div class="subtitle">Issue 1</div>
+
+                    <h2>Separation of historical searches</h2>
+
+                </div>
+            </div>
+            <div class="full_column">
+                It was confusing for the historical searches to be under the 'suggested' section. Although there is a differentiating icon, we agreed that
+                it needed to be more distinct.
+
+            </div>
+        </div>
+        <div class="margin">
+            <div class="center_column">
+                <div class="img_container semi_full">
+                    <img class='img lazy' data-src='../pics/cash/issues_1.png'>
+                </div>
+            </div>
+        </div>
+
+        <div class="margin " data-aos="fade-up">
+
+            <div class="full_column">
+                <div class="section_header">
+					<div class="subtitle">Issue 2</div>
+
+                    <h2>Inconsistency of article layouts</h2>
+
+                </div>
+            </div>
+            <div class="full_column">
+                The search experience was jarring when switching between many different article layouts. Users tend to search pretty quickly, so to
+                rapidly change how we're showing articles might be confusing.
+
+            </div>
+        </div>
+        <div class="margin">
+            <div class="center_column">
+                <div class="img_container semi_full">
+                    <img class='img lazy' data-src='../pics/cash/issues_2.png'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="split_row lightblue">
+        <div class="margin " data-aos="fade-up">
+			<div class="full_column">
+				<div class="section_header">
+					<div class="subtitle">Solution</div>
+
+					<h2>Final Solution</h2>
+
+				</div>
+            </div>
+            <div class="full_column">
+                Based on the feedback on the first iteration, I moved historical searches to its own section.
+                The three different article layouts got replaced by a single, more unified layout.
+                I also cleaned up the design to make it more skimmable.
+            </div>
+        </div>
         <div class="margin">
             <div class="center_column">
                 <div class="img_container">
@@ -383,31 +437,26 @@
 	</div>
 
 
-	<div class="split_row lightblue">
+	<div class="split_row white">
 		<div class="margin" data-aos="fade-up">
 			<div class="full_column">
 				<div class="section_header">
-					<!-- <div class="subtitle">Design Thinking</div> -->
-					<h2>Learnings and Reflections</h2>
+					<div class="subtitle">Reflections</div>
+					<h2>Digging into the details</h2>
 
 				</div>
 			</div>
 			<div class="full_column">
 				<p>
-					This experience really pushed the importance of good, regular communication in design work. I think in a
-			startup, it can be tempting to just pump through tasks for the sake of completion, but I realized that
-			establishing a strong cross-team collaboration mindset is immensely beneficial.
-			<br><br>
+                    At first I thought search would have been a very straightforward feature, as it's a common design pattern
+                    - it wasn't until I mapped out the user flow that all the complexities surfaced.
 
-			Involving PMs and developers more throughout the process would have helped us avoid bumps like
-			miscommunication about the feasibility of certain features, or the small issues arising that led us astray
-			from the design.
+                    <br><br>
 
-			<br><br>
-			As a designer I also learned to be more detailed in how I pass on my designs - every screen should have a
-			few copies of how they would look on different sizes, edge cases like really long text boxes or empty states
-			also need to be designed since people do not read minds - just cause' I know how it looks, if it's not
-			visible, there's no guarantee that it'll turn out how it's expected to be.
+                    Next steps would be to test more thoroughly with real users, and examine the integration with the rest of our support content more closely.
+                    Categorized articles was also out of the scope this time around, but would be interesting the explore further.
+
+
 				</p>
 			</div>
 		</div>
