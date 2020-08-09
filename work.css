@@ -306,7 +306,7 @@ li b{
 h1{
 	padding: 0;
 	margin: 0;
-	font-family:'PT Serif','Martel',serif;
+	font-family:'Martel',serif;
 
 
 }
@@ -314,7 +314,7 @@ h1{
 	font-size:36px;
 
 }
-.section_header h2{
+h2{
 	display: inline;
 	margin: 0px;
 	margin-bottom: 20px;
@@ -452,10 +452,20 @@ li{
 }
 
 
+@media only screen and (max-width: 1440px) {
+	.row_img{
+		height: 300px;
+	}
+
+	.after_img{
+		margin-top:300px;
+	}
+}
 @media only screen and (max-width: 1200px) {
 	.margin,.margin-nav{
 		max-width: 1000px;
 	}
+	
 
 }
 
