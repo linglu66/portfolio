@@ -230,6 +230,10 @@ a .overlay_sub{
 .smaller_column{
 	width:35%;
 }
+
+.section_header{
+	margin-bottom: 50px;
+}
 .title_row{
 	margin-top: 200px;
 	display: flex;
@@ -298,7 +302,8 @@ li b{
 	margin-right: 5px;
 }
 .highlight{
-	background-color: yellow;
+	/* background-color: yellow; */
+	background-color: white;
 }
 .title_row h1{
 	margin-bottom: 10px;
@@ -414,6 +419,10 @@ li{
 
 .imgcontainer,.semi_full{
 	width: 60%;
+
+}
+.imgcontainer,.mid_full{
+	width: 80%;
 
 }
 .imgcontainer,.full{
