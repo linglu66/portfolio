@@ -416,6 +416,9 @@ li{
 	box-shadow: none;
 }
 
+.imgcontainer,.less_semi_full{
+	width: 40%;
+}
 .imgcontainer,.semi_full{
 	width: 60%;
 
