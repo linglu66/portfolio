@@ -59,7 +59,7 @@
   align-items: center;
 }
 
-#work,#mlwork{
+#work,.worksection{
 
 	display: flex;
 	flex-direction: row;
@@ -68,6 +68,8 @@
 	/*border: 1px solid red;*/
 
 }
+
+
 .title{
 	color: white;
     font-weight: 600;
