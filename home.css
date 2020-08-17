@@ -116,7 +116,31 @@ body{
 	/* margin-left:15px;
 	margin-right: 15px; */
 }
+.casestudy{
+	background-color: white;
+	border: 2px solid rgb(236, 236, 236);
 
+	/*margin-right: 20px;*/
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 30px;
+
+	/* width: 100%; */
+	height: 350px;
+	flex-grow:1;
+
+	border-radius: 10px;
+	overflow: hidden;
+
+    animation: none;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+	display: flex;
+
+    position: relative;
+}
+#maincasestudies{
+}
 .workcard{
 	/* display: inline-block; */
 	overflow: hidden;
@@ -131,11 +155,34 @@ body{
 	margin-left: 20px;
 	margin-bottom: 40px;
 }
-.workcard:hover{
+.casetext{
+	min-width: 30%;
+	padding: 30px;
+	padding-left:50px;
+	color: var(--darkgrey);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+p.casebody{
+	font-weight: 200;
+}
+.workcard:hover, .casestudy:hover{
 	transition-duration: 300ms;
 	-webkit-transform: translateY(-8px);
 	transform: translateY(-8px);
 	box-shadow:0px 10px 3px #f0f0f0;
+}
+.imgcontainer{
+	width: 100%;
+	/* height: 300px; */
+	overflow: hidden;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
 }
 
 .cardimgcontainer{
@@ -147,7 +194,7 @@ body{
 	justify-content: center;
 }
 
-.cardimg{
+.cardimg, .imgcontainer{
 	/* width: 100%; */
 	height: 100%;
 	/* height: auto; */
@@ -181,6 +228,7 @@ body{
 
 
 /*images*/
+
 .padding{
 	padding: 30px;
 
@@ -200,11 +248,10 @@ body{
 }
 
 .img{
-	width: 100%;
+	/* width: 100%; */
+	height:100%;
 	background-size: 100% auto;
 	/*height: 400px;*/
-	box-shadow:13px 15px 23px #E0E0E0;
-	margin-bottom: 20px;
 
 
 }
@@ -213,12 +260,19 @@ body{
 .cardtitle{
 	font-weight: 700;
 }
+
+.footer_content p{
+	color: var(--darkgrey);
+}
 .cardtext{
 	padding: 40px;
 	color: var(--darkgrey);
 	height: 50%;
 }
-.cardtext h3{
+.casetext h3{
+	margin-bottom: 20px;
+}
+h3{
 	font-size: 24px;
 	line-height: 30px;
 	/* line-height: 0px; */
@@ -253,7 +307,9 @@ h2{
 	/* # animation: 1s ease-out fadein; */
 
 }
-
+h3.cardtitle{
+	margin-top: 0px;
+}
 p.descript{
 	font-weight: 200;
 }
@@ -262,6 +318,7 @@ p.cardsubtitle{
 	font-weight: 400;
 	color: grey;
 	margin:0px;
+	padding-bottom: 10px;
 }
 
 li p{
@@ -617,7 +674,7 @@ a{
 
 #dessa{
 	/*background: url("pics/1xpreview_dessa.png") bottom center no-repeat;*/
-	background: url("pics/0_5preview_dessa.png") top center no-repeat;
+	background: url("pics/dessa/0_5preview_dessa.png") top center no-repeat;
 	width: 100%;
 	background-size: auto 110%;
 	background-color: #061A40;

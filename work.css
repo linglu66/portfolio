@@ -7,6 +7,14 @@
 	/* border:1px solid green; */
 
 }
+body{
+	margin: auto;
+	padding:auto;
+	
+	max-width: none;
+
+
+}
 
 .workitem{
 	height: 300px;
