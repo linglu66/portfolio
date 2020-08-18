@@ -133,6 +133,12 @@ a .overlay_sub{
 
 }
 
+.just_margin{
+	max-width: 1170px;
+
+
+}
+
 .margin{
     height: auto;
 	margin-left: auto;
@@ -215,7 +221,12 @@ a .overlay_sub{
 	margin-bottom: 50px;
 	display:flex;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
+}
+
+.left_column h1{
+	font-size: 40px;
+	line-height:50px;
 
 }
 
@@ -229,7 +240,7 @@ a .overlay_sub{
 }
 
 .spread_column .img_container{
-	padding:20px;
+	padding:5px;
 }
 
 
@@ -250,7 +261,8 @@ a .overlay_sub{
 	flex-direction: column;
 	justify-content: flex-end;
     padding-bottom: 20px;
-    margin-bottom: 0px;
+	margin-bottom: 0px;
+	
 }
 
 .row_img{
@@ -289,8 +301,8 @@ a .overlay_sub{
 .grid_label{
 	margin-bottom: 0px;
 	padding-bottom: 0px;
-	font-family: 'PT Serif','Martel',serif;
-
+	font-weight: 700;
+	font-family: 'Mukta',serif;
 	/*border: 1px solid green;*/
 }
 
@@ -320,7 +332,8 @@ li b{
 h1{
 	padding: 0;
 	margin: 0;
-	font-family:'Martel',serif;
+	font-weight: 700;
+	font-family:'Mukta',serif;
 
 
 }
@@ -333,14 +346,16 @@ h2{
 	margin: 0px;
 	margin-bottom: 20px;
 	font-size:30px;
-	font-family:'Martel',serif;
+	font-weight: 700;
+	font-family:'Mukta',serif;
 }
 
 .section_header h3{
 	margin: 0px;
 	margin-bottom: 20px;
 	font-size:20px;
-	font-family:'Martel',serif;
+	font-weight: 700;
+	font-family:'Mukta',serif;
 
 }
 
@@ -456,7 +471,7 @@ li{
 
 
 #dessa{
-	background: url("pics/0_5preview_dessa.png") top center no-repeat;
+	background: url("pics/dessa/0_5preview_dessa.png") top center no-repeat;
     /* background-size: 100% auto; */
     background-size: auto 100% ;
 	background-color:  #F7FAFF;
@@ -474,6 +489,10 @@ li{
 
 
 @media only screen and (max-width: 1440px) {
+	
+	.margin{
+		max-width: 900px;
+	}
 	.row_img{
 		height: 300px;
 	}
@@ -481,17 +500,19 @@ li{
 	.after_img{
 		margin-top:300px;
 	}
+	
 }
 @media only screen and (max-width: 1200px) {
-	.margin,.margin-nav{
-		max-width: 1000px;
+	.margin,.margin-nav,.just_margin{
+		max-width: 900px;
 	}
+	
 	
 
 }
 
 @media only screen and (max-width: 1024px) {
-	.margin,.margin-nav{
+	.margin,.margin-nav,.just_margin{
 		max-width: 740px;
 	}
 
@@ -501,7 +522,7 @@ li{
 	*{
 		margin:0px;
 	}
-	.margin,.margin-nav{
+	.margin,.margin-nav,.just_margin{
 		max-width: None;
 		margin-left: 15px;
 		margin-right:15px;
