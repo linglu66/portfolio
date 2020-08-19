@@ -9,6 +9,7 @@
   --darkgrey: #4F5659;
 }
 
+}
 @keyframes fadein {
     from {
         opacity:0;
@@ -32,10 +33,6 @@ body{
 	/* align-items: center; */
 }
 
-/* .body_margin .footer{
-	background-color: blue;
-
-} */
 /*big chunks*/
 .footer{
 
@@ -116,7 +113,9 @@ body{
 	/* margin-left:15px;
 	margin-right: 15px; */
 }
+
 .casestudy{
+	
 	background-color: white;
 	border: 2px solid rgb(236, 236, 236);
 
@@ -138,6 +137,10 @@ body{
 	display: flex;
 
     position: relative;
+}
+.no_margin{
+	margin-left: 0;
+	margin-right: 0;
 }
 #maincasestudies{
 }
@@ -163,6 +166,9 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	/* background-color: tomato; */
+	/* margin:30px; */
+	border-radius: 10px;
 }
 
 p.casebody{
@@ -170,11 +176,22 @@ p.casebody{
 }
 .workcard:hover, .casestudy:hover{
 	transition-duration: 300ms;
-	-webkit-transform: translateY(-8px);
-	transform: translateY(-8px);
+	/* -webkit-transform: translateY(-8px); */
+	/* transform: translateY(-8px); */
+	/* transform: scale(1.05); */
 	box-shadow:0px 10px 3px #f0f0f0;
 }
-.imgcontainer{
+
+.casestudy:hover .homeimg{
+	height:110%;
+
+
+}
+.workcard:hover .cardimgcontainer{
+	height: 340px;
+
+}
+.homeimgcontainer{
 	width: 100%;
 	/* height: 300px; */
 	overflow: hidden;
@@ -194,7 +211,7 @@ p.casebody{
 	justify-content: center;
 }
 
-.cardimg, .imgcontainer{
+.cardimg, .homeimgcontainer{
 	/* width: 100%; */
 	height: 100%;
 	/* height: auto; */
@@ -247,7 +264,7 @@ p.casebody{
 	width: 100%;
 }
 
-.img{
+.homeimg{
 	/* width: 100%; */
 	height:100%;
 	background-size: 100% auto;
@@ -265,14 +282,14 @@ p.casebody{
 	color: var(--darkgrey);
 }
 .cardtext{
-	padding: 40px;
+	margin: 40px;
 	color: var(--darkgrey);
 	height: 50%;
 }
 .casetext h3{
 	margin-bottom: 20px;
 }
-h3{
+h3.cardtitle{
 	font-size: 24px;
 	line-height: 30px;
 	/* line-height: 0px; */
@@ -331,11 +348,7 @@ li p{
 
 	/*border: 1px solid green;*/
 }
-.quote{
-	font-size: 26px;
-	text-align: center;
-	font-weight: 200;
-}
+
 
 #topbody{
 	font-size: 24px;
