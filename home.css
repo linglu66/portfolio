@@ -694,35 +694,6 @@ a{
 }
 
 
-
-#dessa .title,#dessa .overlay_sub{
-	/*color: #286bc9;*/
-	color:white;
-
-}
-
-#dessa .tag{
-	background-color: #286bc9;
-
-	color: white;
-	font-weight: 100;
-}
-
-#dessa .overlay{
-	/*background-color: rgb(108, 214, 207, 0.9);*/
-	background-color: rgb(6, 24, 64, 0.9);
-
-	/*background-color: rgba(248, 250, 255, 0.9);*/
-}
-
-
-#dessa_vid{
-	background: url("pics/dessa_gif.gif") center no-repeat;
-	background-size: 100% auto;
-
-	height: 450px;
-}
-
 .mlworkimage#face2face{
 	background-size:80%;
 

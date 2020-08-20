@@ -456,6 +456,14 @@ li{
 	width: 100%;
 }
 
+.imgcontainer,.over_full{
+	margin-left:-100px;
+	margin-right: -100px;
+	border:1px solid green;
+	width: 100%;
+
+}
+
 .imgcontainer,.reach{
 	width: 60%;
 	margin-bottom: 50px;
