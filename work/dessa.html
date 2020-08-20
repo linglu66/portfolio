@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="../home.css">
 	<link rel="stylesheet" type="text/css" href="../work.css">
 	
-	<link rel="icon" type="image/png" href="../pics/reach/favicon.png">
+	<link rel="icon" type="image/png" href="../pics/dessa/dessa_logo.jpeg">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800&display=swap"
@@ -71,7 +71,8 @@
 				shared, like how to keep track of thousands of experiments, models and results. -->
 				
 				The goal of our product, Atlas, was to make the lives of machine learning engineers easier with experiment and resource
-				management, and a way to track and analyze results. Atlas was at an alpha stage, with few previous considerations to the user experience.
+				management. <br><br>Atlas was at an alpha stage, with few previous considerations to the user experience - my task was to redesign the 
+				experience to be a desirable ML resource in both a consumer and B2B setting.
 				
 
 
@@ -89,16 +90,7 @@
 					
 				</div>
 			</div>
-			<div class="margin">
-				<div class="full_column">
-					
-				</div>
-
-
-				<div class="full_column">
-				
-				</div>
-			</div>
+		
 			<div class="margin bottom_block" data-aos='fade-up'>
 				<div class="center_column">
 					<div class="img_container semi_full">
@@ -138,18 +130,93 @@
 			<div class="margin">
 				<div class="full_column">
 					<div class="section_header">
-						<div class="subtitle">The Process</div>
-						<h2>Research and design audit</h2>
+						<div class="subtitle">Phase 1</div>
+						<h2>Understanding our users </h2>
 
 					</div>
 				</div>
 				<div class="full_column">
 					<p>
-						I ran an initial assessment of Atlas with the product manager, where we identified gaps in the user
+						I first took some time to observe our users - our in-house engineers - to understand better
+						their machine learning workflows and pain points.
+
+
+
+						<!-- I ran an initial assessment of Atlas with the product manager, where we identified gaps in the user
 				experience, such as having no quick way to assess experiments. I held open-ended user interviews with
 				our in-house machine learning engineers to talk about their needs, potential use cases and general
 				feelings towards our product. The insights from the interviews highlighted useful details that guided
-				the redesign.
+				the redesign. -->
+					</p>
+				</div>
+			</div>
+			<div class="margin " data-aos='fade-up'>
+				<div class="center_column">
+					<div class="img_container mid_full">
+						<img  class='img lazy' data-src='../pics/dessa/classic_workflow.svg'>
+						<p class="caption">The classic workflow - fact or fiction?</p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="margin">
+				<div class="full_column">
+					<div class="section_header">
+						<div class="subtitle">Observations</div>
+						<h2>1. Users were extremely varied in the technologies and workflows they used.</h2>
+
+					</div>
+				</div>
+				<div class="full_column">
+					<p><br><br>Across a wide problem space, different tools (Jupyter notebook, python script) and packages meant that users were creating, 
+						evaluating, and testing their models differently.
+
+					</p>
+				</div>
+			</div>
+
+			<div class="margin">
+				<div class="full_column">
+					<div class="section_header">
+						<h2>2. There were a lot of files to keep track of.</h2>
+
+					</div>
+				</div>
+				<div class="full_column">
+					<p>Due to the experiment-heavy nature of ML work, a single project could generate hundreds of experiment logs, model files and artifacts.
+					</p>
+				</div>
+			</div>
+			<div class="margin">
+				<div class="full_column">
+					<div class="section_header">
+						<h2>3. Sharing was hard.</h2>
+
+					</div>
+				</div>
+				<div class="full_column">
+					<p>Slack served as the primary method of sharing and logging notable experiment files. When recipients opened others' files, they
+						often had to create new environments or reconfigure their existing environment and packages to be compatible.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="white">
+		<div class="split_row" data-aos="fade-up">
+			<div class="margin">
+				<div class="full_column">
+					<div class="section_header">
+						<div class="subtitle">Qualitative Data</div>
+						<h2>Interviews</h2>
+
+					</div>
+				</div>
+				<div class="full_column">
+					<p>I held 4 open-ended user interviews with
+						our engineers to talk about their needs, potential use cases and general
+						feelings towards our product. 
 					</p>
 				</div>
 			</div>
@@ -174,13 +241,12 @@
 			<div class="margin bottom_block">
 				<div class="full_column">
 					<div class="section_header">
-						<h3>Observations</h3>
+						<h3>Learnings</h3>
 
 					</div>
 				</div>
 				<div class="full_column">
-					I kept the interviews mostly open-ended (although it was a redesign, we still had a lot of flexibility with
-			the features and user flow) and left with a few observations: <br><br>
+					
 
 				<li>Users wanted more ways to directly assess their experiments</li>
 				<li>In terms of workflows, there were some diverging preferences like whether to view all experiments
@@ -191,7 +257,40 @@
 			</div>
 		</div>
 	</div>
+	<div class="lightblue">
+		<div class="split_row" data-aos="fade-up">
 
+			<div class="margin bottom_block">
+				<div class="full_column">
+					<div class="section_header">
+						<div class="subtitle">Organizing Data</div>
+						<h2>Affinity Diagram</h2>
+
+					</div>
+				</div>
+				<div class="full_column">
+					With the collected data, I created an affinity diagram to understand how to prioritize the 
+					desired functionalities and pain points that arose. 
+
+				</div>
+			</div>
+			<br>
+			<div class="margin bottom_block">
+				<div class="center_column">
+					<div class="img_container mid_full">
+						<img  class='img lazy' data-src='../pics/dessa/sticky_func.png'>
+						<p class="caption">Groups of observed and desired functionalities</p>
+					<br><br>
+						<img  class='img lazy' data-src='../pics/dessa/sticky_pain.png'>
+						<p class="caption">Pain points discovered in interviews</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
 	<div class="white">
 		<div class="split_row" data-aos="fade-up">
 
@@ -225,7 +324,7 @@
 				<div class="full_column">
 					<div class="section_header">
 						<div class="subtitle">Sketches and wireframes</div>
-						<h2>In Progress</h2>
+						<h2>Explorations</h2>
 
 					</div>
 				</div>
