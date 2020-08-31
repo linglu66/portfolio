@@ -9,6 +9,8 @@
   --darkgrey: #4F5659;
 }
 
+a{
+	text-decoration-style: none;
 }
 @keyframes fadein {
     from {
@@ -65,8 +67,12 @@ body{
 
 }
 #topchunk{
+	justify-content: space-between;
+	padding-top: 150px;
+	display: flex;
+	flex-direction: row;
+	/* flex-direction: column; */
 	margin-bottom: 80px;
-	/*border: 1px solid green;*/
 }
 
 
@@ -142,6 +148,82 @@ body{
 	margin-left: 0;
 	margin-right: 0;
 }
+.currentlyWorkingOn{
+	width:700px;
+	/* border:1px solid red; */
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	
+}
+
+.currentlyWorkingOn .container{
+	z-index: 5;
+	width:400px;
+	display:flex;
+	flex-direction: column;
+	border-radius: 5px;
+	padding:5px;
+
+	border: 2px solid #2097F6;
+	-webkit-box-shadow: 10px 10px 0px 0px rgba(69,125,237,1);
+-moz-box-shadow: 10px 10px 0px 0px rgba(69,125,237,1);
+box-shadow: 10px 10px 0px 0px rgba(69,125,237,1);
+}
+
+.workingOn{
+	color: var(--darkgrey);
+	width: auto;
+	/* background-color: #E7F4FF; */
+	/* border: 2px solid #2097F6; */
+	/* box-shadow: #02a5db; */
+	padding:10px 15px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+.workingOn:hover{
+	background-color: #E7F4FF;
+ 
+
+}
+.tooltip {
+	/* min-width: 30px; */
+    display:inline-block;
+	position:relative;
+	/* color:white; */
+   
+}
+
+.tooltip .right {
+    min-width:200px; 
+    top:50%;
+    right:100%;
+    margin-right:40px;
+    transform:translate(0, -80%);
+    padding:10px 20px;
+    color:white;
+    background-color:#2097F6;
+    font-weight:normal;
+    font-size:15px;
+    border-radius:8px;
+    position:absolute;
+    z-index:10;
+    box-sizing:border-box;
+	opacity: 0;
+	transition: all 300ms ease-in-out;
+	
+}
+
+.tooltip:hover .right {
+	/* top:60% */
+	/* transition: ease-in-out; */
+	
+	transform:translate(0%, -50%);
+	opacity: 1;
+}
+
+
 #maincasestudies{
 }
 .workcard{
@@ -428,9 +510,10 @@ li p{
 }
 /*textboxes*/
 #toptext{
-	margin-top: 150px;
-	width: 80%;
+	/* margin-top: 150px; */
+	width: 50%;
 	/*margin-left: 15px;*/
+	
 }
 
 /*navbar*/
@@ -903,6 +986,22 @@ a{
 
 
 @media only screen and (max-width: 902px) {
+	#topchunk{
+		width: auto;
+		/* margin-right: 15px; */
+		/* margin-left: ; */
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	
+	}
+	.currentlyWorkingOn{
+		/* border: 1px solid red; */
+		width:auto;
+		justify-content: flex-start;
+		align-items: flex-start;
+		/* margin-right: 15px; */
+	}
 	#foodora.row_img{
 		background-size: 50%;
 	}
@@ -948,6 +1047,7 @@ a{
 	}
 
 }
+
 @media only screen and (max-width: 750px) {
 	#motion, #motion.row_img{
 		background-size: 50%;
