@@ -70,8 +70,8 @@ body{
 	justify-content: space-between;
 	padding-top: 150px;
 	display: flex;
-	flex-direction: row;
-	/* flex-direction: column; */
+	/* flex-direction: row; */
+	flex-direction: column;
 	margin-bottom: 80px;
 }
 
@@ -144,40 +144,48 @@ body{
 
     position: relative;
 }
+.thick{
+	font-family: "Nunito";
+	font-weight: 600;
+}
 .no_margin{
 	margin-left: 0;
 	margin-right: 0;
 }
 .currentlyWorkingOn{
-	width:700px;
+	
+	/* width:700px; */
 	/* border:1px solid red; */
 	display:flex;
 	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-end;
+	/* justify-content: flex-end; */
+	/* align-items: flex-end; */
 	
 }
 
 .currentlyWorkingOn .container{
 	z-index: 5;
-	width:400px;
+	/* width:400px; */
 	display:flex;
-	flex-direction: column;
+	/* flex-direction: column; */
 	border-radius: 5px;
 	padding:5px;
 
-	border: 2px solid #2097F6;
-	-webkit-box-shadow: 10px 10px 0px 0px rgba(69,125,237,1);
--moz-box-shadow: 10px 10px 0px 0px rgba(69,125,237,1);
-box-shadow: 10px 10px 0px 0px rgba(69,125,237,1);
+	/* border: 2px solid #2097F6; */
+	/* -webkit-box-shadow: 10px 10px 0px 0px rgba(69,125,237,1); */
+/* -moz-box-shadow: 10px 10px 0px 0px rgba(69,125,237,1); */
+/* box-shadow: 10px 10px 0px 0px rgba(69,125,237,1); */
 }
 
 .workingOn{
 	color: var(--darkgrey);
 	width: auto;
-	/* background-color: #E7F4FF; */
+	/* text-decoration:underline; */
+	background-color: #d6dee4;
 	/* border: 2px solid #2097F6; */
 	/* box-shadow: #02a5db; */
+	margin-right: 30px;
+	/* margin-left: 15px; */
 	padding:10px 15px;
 	border-radius: 5px;
 	margin-bottom: 5px;
@@ -196,11 +204,18 @@ box-shadow: 10px 10px 0px 0px rgba(69,125,237,1);
 }
 
 .tooltip .right {
-    min-width:200px; 
-    top:50%;
-    right:100%;
-    margin-right:40px;
-    transform:translate(0, -80%);
+    /* min-width:200px;  */
+    /* top:200%; */
+    /* right:100%; */
+    /* margin-right:40px; */
+	transform:translate(0, -80%);
+	
+
+	top:40px;
+    /* left:50%; */
+    /* transform:translate(-50%, 0); */
+
+
     padding:10px 20px;
     color:white;
     background-color:#2097F6;
@@ -220,10 +235,17 @@ box-shadow: 10px 10px 0px 0px rgba(69,125,237,1);
 	/* transition: ease-in-out; */
 	
 	transform:translate(0%, -50%);
-	opacity: 1;
+	/* opacity: 1; */
 }
 
-
+.spread{
+	height:80vh;
+	padding-top:100px;
+	/* background-color: tomato; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 #maincasestudies{
 }
 .workcard{
@@ -511,8 +533,9 @@ li p{
 /*textboxes*/
 #toptext{
 	/* margin-top: 150px; */
-	width: 50%;
+	width: 80%;
 	/*margin-left: 15px;*/
+	/* background-color: tomato; */
 	
 }
 
@@ -996,6 +1019,7 @@ a{
 	
 	}
 	.currentlyWorkingOn{
+		
 		/* border: 1px solid red; */
 		width:auto;
 		justify-content: flex-start;
