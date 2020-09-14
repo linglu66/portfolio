@@ -144,6 +144,9 @@ body{
 
     position: relative;
 }
+.top_padding{
+	padding-top: 150px;
+}
 .thick{
 	font-family: "Nunito";
 	font-weight: 600;
@@ -295,6 +298,9 @@ p.casebody{
 	height: 340px;
 
 }
+.crop{
+	overflow: hidden;
+}
 .homeimgcontainer{
 	width: 100%;
 	/* height: 300px; */
@@ -318,6 +324,8 @@ p.casebody{
 .cardimg, .homeimgcontainer{
 	/* width: 100%; */
 	height: 100%;
+	/* max-width:100%; */
+	/* max-height:100%; */
 	/* height: auto; */
 } 
 .fullh{
@@ -617,7 +625,6 @@ li p{
 
 
 	background-color: white;
-	/*border: 1px solid green;*/
 
 }
 .margin{
@@ -626,7 +633,7 @@ li p{
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1170px;
-	/*border: 1px solid red;*/
+	
 
 	margin-left: auto;
 	margin-right: auto;
@@ -637,6 +644,26 @@ li p{
 
 }
 
+.illustrations{
+	display:flex;
+	flex-wrap: wrap;
+	height:auto;
+	margin-right: -15px;
+	padding-bottom: 80px;
+	
+
+}
+.illustration_holder{
+	min-width: 300px;
+	overflow: hidden;
+	flex-grow: 1;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width:30%;
+	height:350px;
+	border-radius: 20px;
+	background-color: #2097F6;
+}
 
 /*workchunks*/
 .workitem{
