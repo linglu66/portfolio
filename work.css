@@ -139,6 +139,7 @@ a .overlay_sub{
 
 }
 
+
 .margin{
     height: auto;
 	margin-left: auto;
@@ -152,7 +153,9 @@ a .overlay_sub{
     margin-bottom: 50px;
 
 }
-
+bottom_margin{
+	margin-bottom:200px;
+}
 /* vertical center */
 #center_parent{
     display: flex;
@@ -307,6 +310,13 @@ a .overlay_sub{
 }
 
 /* Fonts */
+.center_align{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
 .text_box{
 	padding: 30px;
 	display: flex;
@@ -469,11 +479,16 @@ li{
 	margin-bottom: 50px;
 }
 
+
+
 #reach{
 	background: url("pics/reach/solid_banner_updated.png") bottom center no-repeat;
     /* background-size: 100% auto; */
     background-size: auto 100% ;
 	background-color:  #3EAA91;
+	overflow: hidden;
+	/* border:1px solid red;  */
+	height: 100%;
 }
 
 
