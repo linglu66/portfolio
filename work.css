@@ -150,10 +150,10 @@ a .overlay_sub{
 	flex-direction: row;
     align-items: start;
     justify-content: space-between;
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 
 }
-bottom_margin{
+.bottom_margin{
 	margin-bottom:200px;
 }
 /* vertical center */
@@ -179,7 +179,21 @@ bottom_margin{
 	background-color: white;
 
 }
-
+.wide_text{
+	max-width: 800px;
+}
+.center_v{
+	/* height:100%; */
+	height:500px;
+	/* width:30%; */
+	display:flex;
+	
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	/* align-items: ; */
+	
+}
 #navtitle{
 	/*flex-grow: 1;*/
 	font-size: 18px;
@@ -215,8 +229,9 @@ bottom_margin{
 }
 .center_column{
 	width: 100%;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 	display:flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -368,7 +383,6 @@ h2{
 	font-family:'Mukta',serif;
 
 }
-
 .full_column p{
     font-weight: 300;
 
@@ -478,7 +492,6 @@ li{
 	width: 60%;
 	margin-bottom: 50px;
 }
-
 
 
 #reach{
