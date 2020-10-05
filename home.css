@@ -243,7 +243,7 @@ body{
 
 .spread{
 	height:80vh;
-	padding-top:100px;
+	/* padding-top:100px; */
 	/* background-color: tomato; */
 	display: flex;
 	flex-direction: column;
@@ -523,13 +523,13 @@ li p{
 #toplinks a{
 	margin-left: 40px;
 	text-decoration: none;
-	color: lightgrey;
+	color: grey;
     transition: color 0.2s ease-in-out;
 
 
 }
 #toplinks a:hover{
-	color: grey;
+	color: black;
 
 }
 

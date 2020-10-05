@@ -204,12 +204,15 @@ a .overlay_sub{
 #navlinks a{
 	margin-left: 40px;
 	text-decoration: none;
-	color: lightgrey;
+	color: grey;
     transition: color 0.2s ease-in-out;
 
 
 }
+#navlinks a:hover{
+	color: black;
 
+}
 .row{
 	height: auto;
     margin-left: auto;
