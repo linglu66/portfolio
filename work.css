@@ -5,15 +5,12 @@
 	text-rendering: optimizeLegibility;
 	font-weight: 300;
 	/* border:1px solid green; */
-
 }
+
 body{
 	margin: auto;
 	padding:auto;
-	
 	max-width: none;
-
-
 }
 
 .workitem{
@@ -21,7 +18,6 @@ body{
 	width: 35%;
 	background-color: blue;
 
-	/*margin-right: 20px;*/
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-bottom: 30px;
@@ -37,57 +33,52 @@ body{
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
 	display: block;
-
     position: relative;
 }
 
 .workitem:hover {
-
-
-     -webkit-transform: scale(1.01);
-        -ms-transform: scale(1.01);
-        transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
 	/*background-color: blue;*/
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(44, 124, 244, 0.9);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(44, 124, 244, 0.9);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #work,.worksection{
-
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	max-width: 1200px;
 	/*border: 1px solid red;*/
-
 }
-
 
 .title{
 	color: white;
     font-weight: 600;
     font-size: 20px;
     margin: 0;
-
 }
+
 a .overlay_sub{
 	color:white;
 }
+
 .overlay_text{
 	padding: 10px 15px;
 	margin: auto;
@@ -95,11 +86,11 @@ a .overlay_sub{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
-
 }
+
 .workitem:hover .overlay {
-  opacity: 1;}
+	opacity: 1;
+}
 
 #workchunk{
     max-width: 1170px;
@@ -108,11 +99,11 @@ a .overlay_sub{
 
 	margin-top: 10vh;
 	margin-bottom: 20vh;
+
 	/* margin-left: -15px; */
 	/* margin-right: -15px; */
 	padding: 0px;
 	/* # opacity: 0; */
-
     /* # animation: 0.5s ease-out fadein; */
     /* # animation-delay: 3s; */
 	animation-fill-mode: forwards;
@@ -130,16 +121,33 @@ a .overlay_sub{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-
 }
+
 
 .just_margin{
+	padding-top:100px;
+	/* padding-bottom:100px; */
 	max-width: 1170px;
-
+	/* border:1px solid grey; */
+	margin:auto;
 
 }
+.split_35{
+	width:35%;
+}
 
-
+.half_split{
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+	justify-content: space-between;
+}
+.reg_margin{
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1170px;
+}
 .margin{
     height: auto;
 	margin-left: auto;
@@ -155,6 +163,9 @@ a .overlay_sub{
 }
 .bottom_margin{
 	margin-bottom:200px;
+}
+.med_bottom_margin{
+	margin-bottom: 50px;
 }
 /* vertical center */
 #center_parent{
@@ -252,11 +263,11 @@ a .overlay_sub{
 }
 
 .spread_column{
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 	display:flex;
 	align-items: center;
 	justify-content: space-between;
-	margin:-20px;
+	/* margin:-20px; */
 
 }
 
@@ -275,6 +286,9 @@ a .overlay_sub{
 
 .section_header{
 	margin-bottom: 50px;
+}
+.small_margin_bottom{
+	margin-bottom: 20px;
 }
 .title_row{
 	margin-top: 200px;
@@ -466,6 +480,9 @@ li{
 .left_margin{
 	margin-left:100px;
 }
+.no_margin{
+	margin-bottom:0px;
+}
 /* Images */
 .img{
 	width: 100%;
@@ -507,7 +524,7 @@ li{
 
 .imgcontainer,.reach{
 	width: 60%;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 }
 
 
@@ -543,9 +560,10 @@ li{
 
 @media only screen and (max-width: 1440px) {
 	
-	.margin{
+	.margin, .reg_margin{
 		max-width: 900px;
 	}
+	
 	.row_img{
 		height: 300px;
 	}
@@ -556,7 +574,7 @@ li{
 	
 }
 @media only screen and (max-width: 1200px) {
-	.margin,.margin-nav,.just_margin{
+	.margin,.margin-nav,.just_margin,.reg_margin{
 		max-width: 900px;
 	}
 	
