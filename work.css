@@ -583,7 +583,7 @@ li{
 }
 
 @media only screen and (max-width: 1024px) {
-	.margin,.margin-nav,.just_margin{
+	.margin,.margin-nav,.just_margin, .reg_margin{
 		max-width: 740px;
 	}
 
@@ -593,7 +593,7 @@ li{
 	*{
 		margin:0px;
 	}
-	.margin,.margin-nav,.just_margin{
+	.margin,.margin-nav,.just_margin, .reg_margin{
 		max-width: None;
 		margin-left: 15px;
 		margin-right:15px;
