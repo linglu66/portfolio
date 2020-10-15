@@ -70,8 +70,8 @@ body{
 	justify-content: space-between;
 	padding-top: 150px;
 	display: flex;
-	/* flex-direction: row; */
-	flex-direction: column;
+	flex-direction: row;
+	/* flex-direction: column; */
 	margin-bottom: 80px;
 }
 
@@ -358,6 +358,11 @@ p.casebody{
 
 /*images*/
 
+#header_illustration{
+	width:50%;
+	/* max-height: 400px; */
+
+}
 .padding{
 	padding: 30px;
 
@@ -541,7 +546,7 @@ li p{
 /*textboxes*/
 #toptext{
 	/* margin-top: 150px; */
-	width: 70%;
+	width: 48%;
 	/*margin-left: 15px;*/
 	/* background-color: tomato; */
 	
