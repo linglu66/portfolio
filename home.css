@@ -72,6 +72,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	/* flex-direction: column; */
+	/* border:1px solid red; */
 	margin-bottom: 80px;
 }
 
@@ -264,6 +265,7 @@ body{
 	flex-shrink: 1;
 	margin-left: 20px;
 	margin-bottom: 40px;
+	max-width: 33%;
 }
 .casetext{
 	min-width: 30%;
@@ -549,6 +551,9 @@ li p{
 	width: 48%;
 	/*margin-left: 15px;*/
 	/* background-color: tomato; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	
 }
 
