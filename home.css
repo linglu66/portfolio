@@ -72,8 +72,9 @@ body{
 	display: flex;
 	flex-direction: row;
 	/* flex-direction: column; */
-	/* border:1px solid red; */
+	border:1px solid red;
 	margin-bottom: 80px;
+	/* height:500px; */
 }
 
 
@@ -362,7 +363,7 @@ p.casebody{
 
 #header_illustration{
 	width:50%;
-	/* max-height: 400px; */
+	max-height: 400px;
 
 }
 .padding{
