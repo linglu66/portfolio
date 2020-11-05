@@ -1,5 +1,5 @@
 *{
-	font-family: 'Mukta',"Segoe UI",sans-serif;
+	font-family: 'Nunito','Mukta',"Segoe UI",sans-serif;
     transition: all 0.5s ease;
     -webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -7,13 +7,13 @@
 
 :root {
   --darkgrey: #4F5659;
-  --lightgrey:  #c4cdd1;
+  --lightgrey:  #f5f5f585;
+  --linkblue: rgb(0, 102, 255);
 }
+
 .lightgrey{
-	background-color: lightgrey;
+	background-color: var(--lightgrey);
 	width:100vw;
-	margin:0px;
-	border:1px solid salmon
 }
 a{
 	text-decoration-style: none;
@@ -32,7 +32,7 @@ body{
 	padding-top: 0px;
   	margin-left: 100px;
 	margin-right: 100px;
-	max-width: 1170px;
+	/* max-width: 1170px; */
 	margin-left: auto;
 	margin-right: auto;
 
@@ -536,7 +536,8 @@ li p{
 }
 #toplinks a{
 	margin-left: 40px;
-	text-decoration: none;
+    text-decoration: none;
+    font-family: "Mukta";
 	color: grey;
     transition: color 0.2s ease-in-out;
 
@@ -638,7 +639,8 @@ li p{
 	flex-grow: 1;
 	width:100%;
 	padding-top: 15px;
-	padding-bottom:20px;
+    padding-bottom:20px;
+    font-family: 'Mukta';
 
 
 	background-color: white;
@@ -740,12 +742,14 @@ li p{
 }
 
 .aboutBlock{
+    
 	width:50%;
 	margin-bottom: 50px;
 }
 
 .blockTitle{
-	margin-bottom: 15px;
+    margin-bottom: 15px;
+    font-size:18px;
 	font-weight: 700;
 
 }
@@ -753,21 +757,23 @@ li p{
 	font-weight: 300;
 }
 .aboutMargin{
-	/* max-width: 900px; */
-	padding-left: auto;
-	padding-right: auto;
+    padding-top:100px;
+	max-width: 900px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
 	/* border: 1px solid green; */
 
 }
 #aboutTop{
-	margin-top: 300px;
+    margin-top: 150px;
+    margin-bottom: 50px;
 	/*height: 300px;*/
 	display: flex;
 	flex-direction: row;
 	/* justify-content: space-between; */
 	/* align-content: center; */
 	align-items: center;
-	margin-bottom: 150px;
 	font-weight: 600;
 }
 
@@ -791,12 +797,16 @@ li p{
 
 
 }
-
+.split{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 #abouttext{
 	margin-left: 100px;
 	width: 50%;
 	font-size: 24px;
-	font-weight:400;
+	font-weight:700;
 }
 /*workchunk details*/
 .tag{
@@ -861,155 +871,9 @@ li p{
 }
 
 a{
-	color: blue;
+	color: var(--linkblue);
 	text-decoration: none;
 }
-
-#dessa{
-	/*background: url("pics/1xpreview_dessa.png") bottom center no-repeat;*/
-	background: url("pics/dessa/0_5preview_dessa.png") top center no-repeat;
-	width: 100%;
-	background-size: auto 110%;
-	background-color: #061A40;
-}
-
-
-.mlworkimage#face2face{
-	background-size:80%;
-
-}
-#face2face{
-	background: url("pics/facetoface graphicbright.png") center center no-repeat;
-	background-size:50%;
-	background-color:  rgba(0, 186, 249);
-
-}
-
-#face2face .tag{
-	background-color: #02a5db;
-	color: white;
-}
-
-#face2face .overlay{
-	/*background-color: rgb(108, 214, 207, 0.8);*/
-	background-color: rgba(0, 186, 249, 0.9);
-}
-
-#face2face.row_img, #face2face.workitem{
-	background-size:25%;
-}
-
-
-.mlworkimage#faketrump{
-	background: url("pics/trumptweets.jpg") 100% auto no-repeat;
-	background-size: 100%;
-}
-#faketrump{
-	background: url("pics/trumptweets.jpg") center center no-repeat;
-	background-size:50%;
-	background-color: #3343CC;
-
-}
-
-#faketrump .tag{
-	background-color: #1d2fb7;
-	color: white;
-}
-
-#faketrump .overlay{
-	/*background-color: rgb(108, 214, 207, 0.8);*/
-	background-color: rgb(50, 65, 198, 0.9);
-}
-
-#faketrump.row_img, #faketrump.workitem{
-	background-size:35%;
-}
-#foodora{
-	background: url("pics/foodora_05.jpg") center center no-repeat;
-	background-size:50%;
-	background-color: #d60765;
-}
-
-#foodora .tag{
-	/*background-color: #D70F64;*/
-	background-color: #e04a86;
-	color: white;
-}
-
-#foodora .overlay{
-	/*background-color: rgb(108, 214, 207, 0.8);*/
-	background-color: rgb(186, 26, 92, 0.9);
-}
-
-#foodora.row_img{
-	background-size:30%;
-
-
-}
-
-#motion{
-	background: url("pics/motion/bounce_2.gif") center center no-repeat;
-	background-size:40%;
-	width: 100%;
-	/*width:300px;*/
-	background-color: #096163;
-}
-#motion::before{
-
-}
-
-#foodora .tag{
-	/*background-color: #D70F64;*/
-	background-color: #e04a86;
-	color: white;
-}
-
-#motion .overlay{
-	/*background-color: rgb(108, 214, 207, 0.8);*/
-	background-color: rgb(9, 97, 99, 0.9);
-}
-
-#motion.row_img{
-	width: 100%;
-	background-size: 30%;
-
-}
-
-#reach{
-	background: url("pics/reach/solid_banner_updated.png") bottom center no-repeat;
-
-	background-size: auto 100% ;
-	background-color:  #3EAA91;
-
-
-}
-#reach.row_img{
-	width: 100%;
-	height: 500px;
-
-	/* background-size: 60%; */
-
-}
-
-#cash{
-	background: url("pics/cash/banner_1.png") bottom center no-repeat;
-
-	background-position: center;
-	background-size: 100% auto ;
-	background-color:  #00D632;
-	/* background: url("pics/cash/cash_banner_1.png") bottom center no-repeat;
-
-	background-position: center;
-	background-size: 100% auto ;
-	background-color:  #00D632; */
-
-
-}
-#cash .overlay{
-	/*background-color: rgb(108, 214, 207, 0.8);*/
-	background-color: rgba(11, 107, 131, 0.9);
-}
-
 
 .block{
 	display: flex;
@@ -1042,13 +906,7 @@ a{
 	width: 230px;
 	border: 2px solid grey;
 }
-#reach2{
-	background: url("pics/reach/reach_bg_yellow.png") bottom center no-repeat;
-	background-size: auto 100% ;
-	background-color:  #fdfff5;
-	/* max-width: 1900px; */
-	/* margin: auto; */
-}
+
 
 .fade-in-section {
 	opacity: 0;
@@ -1062,22 +920,6 @@ a{
 	transform: none;
 	visibility: visible;
 	}
-
-
-#face2face .tag{
-	background-color: #02a5db;
-	color: white;
-}
-
-#face2face .overlay{
-	/*background-color: rgb(108, 214, 207, 0.8);*/
-	background-color: rgba(0, 186, 249, 0.9);
-}
-
-#face2face.row_img, #face2face.workitem{
-	background-size:25%;
-}
-
 
 
 
