@@ -366,10 +366,16 @@ p.casebody{
 
 
 /*images*/
-
+.header_illustration_container{
+	height:400px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y: hidden;
+}
 #header_illustration{
-	width:50%;
-	max-height: 400px;
+	width:70%;
+	/* max-height: 400px; */
 
 }
 .padding{
