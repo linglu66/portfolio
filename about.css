@@ -534,6 +534,9 @@ li p{
 	padding: 0px;
 
 }
+#about_journey{
+	max-width: 500px;
+}
 #toplinks a{
 	margin-left: 40px;
     text-decoration: none;
