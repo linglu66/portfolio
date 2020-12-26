@@ -86,6 +86,7 @@ body{
 
 #workchunk{
 	/* background-color: blue; */
+    max-width: 1170px;
 
 	margin-top: 10vh;
 	margin-bottom: 20vh;
@@ -645,6 +646,46 @@ li p{
 	width:100%;
 	padding-top: 15px;
 	padding-bottom:20px;
+	background-color: white;
+
+}
+
+.margin-nav{
+    height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1170px;
+
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#navlinks a{
+	margin-left: 40px;
+	text-decoration: none;
+	color: grey;
+    transition: color 0.2s ease-in-out;
+
+
+}
+#navlinks a:hover{
+	color: black;
+
+}
+#topnav{
+	position: fixed;
+	top: -18px;
+	left: 0px;
+	z-index: 100;
+	padding:0px;
+	flex-grow: 1;
+	width:100%;
+	padding-top: 15px;
+	padding-bottom:20px;
 
 
 	background-color: white;
@@ -1086,7 +1127,11 @@ a{
 
 
 
-
+@media only screen and (max-width:1024px){
+	.margin-nav{
+		max-width: 900px;
+	}
+}
 
 @media only screen and (max-width: 902px) {
 	#topchunk{
@@ -1152,14 +1197,22 @@ a{
 
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
 	#motion, #motion.row_img{
 		background-size: 50%;
 
 	}
 
+	.margin-nav{
+		max-width:700px;
+	}
+
 }
 @media only screen and (max-width: 480px) {
+
+	.margin-nav{
+		max-width:85%;
+	}
 	#motion{
 		background-size: 70%;
 
