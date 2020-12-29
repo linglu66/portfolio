@@ -227,6 +227,30 @@ h3{
 	margin-bottom: 10px;
 
 }
+.tomato{
+	color: tomato;
+}
+.small_header{
+	font-size:18px;
+	color:tomato;
+	font-weight: 400;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	display: flex;
+	align-items: center;
+	width:20%;
+}
+.small_header::after {
+	content: '';
+	flex: 1;
+	margin-left: 10px;
+	height: 1px;
+	background-color: tomato;
+  }
+.big_text{
+	margin-top:10px;
+	font-size:24px;
+}
 .subtitle{
 	margin-bottom: 0px;
 	margin-top:10px;
@@ -273,7 +297,39 @@ h3{
 	width:75;
 }
 
-
+/* ~~~~~~~~~~~~~~~buttons~~~~~~~~~~~~~~~~~ */
+.button{
+	border-radius:50px;
+	padding:10px 20px 10px 15px;
+	border:1px solid tomato;
+	font-size:16px;
+	color:white;
+	background-color: tomato;
+	font-weight: 400;
+}
+.hvr-icon-forward {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+  }
+  .hvr-icon-forward .hvr-icon {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+  }
+  .hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+	-webkit-transform: translateX(4px);
+	transform: translateX(4px);
+  }
 /* ~~~~~~~~~~~~~responsiveness~~~~~~~~~~~~~~~~~~~~ */
 /* @media only screen and (max-width: 1024px) {
 	.row, .row_left, .row_narrow{
