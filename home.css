@@ -651,6 +651,9 @@ li p{
 
 }
 
+.toplinks .icon {
+	display:none;}
+
 .margin-nav{
     height: auto;
 	margin-left: auto;
@@ -1210,6 +1213,22 @@ a{
 
 }
 @media only screen and (max-width: 480px) {
+	.toplinks.responsive {position: relative;}
+	.toplinks.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.toplinks.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.toplinks a {display: none;}
+	.toplinks a.icon {
+		float: right;
+		display: block;
+	}
 	.header_illustration_container{
 		height:auto;
 	}

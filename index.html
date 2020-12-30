@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Ling Lu</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="home.css">
+	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
@@ -27,11 +29,14 @@
 		<ul id='topnav'>
 			<div class='margin'>
 				<a href='index.html'id ='navtitle'>Ling Lu</a>
-				<div id='toplinks'>
+				<div id='toplinks' class='toplinks'>
 					<a href="#" id='active_link' >Portfolio</a>
 					<!-- <a href="">Resume</a> -->
 					<a href="illustrations.html">Illustrations</a>
 					<a href="about.html">About</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					  </a>
 				</div>
 
 			</div>
@@ -182,6 +187,14 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="tilt.jquery.js"></script>
 	<script>
+		function myFunction() {
+			var x = document.getElementById("toplinks");
+			if (x.className === "toplinks") {
+				x.className += " responsive";
+			} else {
+				x.className = "toplinks";
+			}
+			}
 		$('.js-tilt').tilt({
 			scale: 2.0
 		})
