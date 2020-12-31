@@ -250,6 +250,7 @@ h3{
 .big_text{
 	margin-top:10px;
 	font-size:24px;
+	margin-bottom: 0px;
 }
 .subtitle{
 	margin-bottom: 0px;
@@ -330,6 +331,44 @@ h3{
 	-webkit-transform: translateX(4px);
 	transform: translateX(4px);
   }
+  /* ~~~~~~~~~~~~~Pop up ~~~~~~~~~~~~ */
+
+.popup{
+	padding: 0px 20px ;
+	width: 350px;
+	border-radius: 5px;
+	border:2px solid grey;
+	display: flex;
+	justify-content: flex-start;
+	font-weight: 600 !important;
+}
+.content{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-weight: 600 !important;
+	max-width:300px;
+
+	/* align-content: flex-start; */
+	
+}
+.content p{
+	font-weight: 400 !important;
+
+	font-size:14px;
+}
+.content img{
+	padding-right:20px;
+}
+
+.info{
+	background-color: #E2F1FF;
+	border:2px solid #2F80ED;
+	color:  #2F80ED;
+	font-weight: 800;
+
+
 /* ~~~~~~~~~~~~~responsiveness~~~~~~~~~~~~~~~~~~~~ */
 /* @media only screen and (max-width: 1024px) {
 	.row, .row_left, .row_narrow{
