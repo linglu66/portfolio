@@ -1,6 +1,6 @@
 *{
 	font-family: 'Nunito','Mukta',"Segoe UI",sans-serif;
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease; */
     -webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
@@ -782,7 +782,7 @@ li p{
 
 .circle{
 	border-radius: 100%;
-	background-color: tomato;
+	/* background-color: tomato; */
 	height:250px;
 	width:250px;
 	overflow: hidden;
