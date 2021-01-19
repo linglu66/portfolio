@@ -790,11 +790,11 @@ li p{
 }
 #selfpic{
 	background-image: url('pics/myself.jpg') ;
-	background-size: auto 100%;
-	background-position: center center;
+	background-size: 100%;
+	/* background-position: center center; */
 	width: 250px;
 	height: 300px;
-	border-radius: 100px;
+	border-radius: 10px;
 	
 
 
