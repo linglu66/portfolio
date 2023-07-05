@@ -13,7 +13,7 @@
 	background-color: lightgrey;
 	width:100vw;
 	margin:0px;
-	border:1px solid salmon
+/*	border:1px solid salmon*/
 }
 a{
 	text-decoration-style: none;
@@ -164,6 +164,9 @@ body{
 .no_margin{
 	margin-left: 0;
 	margin-right: 0;
+}
+.no_margin_anywhere{
+	margin:0px;
 }
 .currentlyWorkingOn{
 	

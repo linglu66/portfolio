@@ -32,6 +32,7 @@ body{
 
 }
 
+
 .background_colour{
 	background-color: var(--block_background);
 }
@@ -211,6 +212,27 @@ ul.work_details{
 	font-weight: 500;
 }
 
+.casestudy_mini{
+	display: flex;
+	width: 100%;
+	padding: 12px;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 6px;
+	background-color: #FAFAFA;
+}
+
+.casestudy_mini_header{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 6px;
+}
+
+.casestudy_mini_header h3{
+	margin-block-end: None;
+}
+
 
 /* ~~~~~~~~~~~~~fonts~~~~~~~~~~~~~~~~~~~~ */
 b{
@@ -234,12 +256,26 @@ h2{
 
 }
 
+#casestudy_mini_subtitle{
+	margin:0px;
+	color: var(--darkgrey);
+}
+
 h3{
 	margin-top:5px;
 	font-family: 'Work Sans';
 	font-weight: 600;
 	font-size:  24px;
 	margin-bottom: 10px;
+	color: var(--darkdarkgrey);
+
+}
+
+h4{
+	font-family: 'Work Sans';
+	font-weight: 500;
+	font-size:  18px;
+/*	margin-bottom: 10px;*/
 	color: var(--darkdarkgrey);
 
 }
