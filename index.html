@@ -22,236 +22,37 @@
 	  gtag('config', 'UA-154730694-1');
 
 	</script>
-
+<style>
+        @keyframes dot1 {
+            0%, 100% { opacity: 0; }
+            33% { opacity: 1; }
+        }
+        @keyframes dot2 {
+            0%, 33%, 100% { opacity: 0; }
+            66% { opacity: 1; }
+        }
+        @keyframes dot3 {
+            0%, 66% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .dot1 { animation: dot1 1.5s infinite; }
+        .dot2 { animation: dot2 1.5s infinite; }
+        .dot3 { animation: dot3 1.5s infinite; }
+    </style>
 </head>
-<body>
-	<div class="body_margin">
-		<ul id='topnav'>
-			<div class='margin'>
-				<a href='index.html'id ='navtitle'>Ling Lu</a>
-				<div id='toplinks' class='toplinks'>
-					<a href="#" id='active_link' >Portfolio</a>
-					<a target='_blank' href="https://drive.google.com/file/d/1--63dqhPyjkq-wVnQl9iTB5bud5GN8S4/view?usp=sharing">Resume</a>
-					<a href="illustrations.html">Illustrations</a>
-					<a href="about.html">About</a>
-					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-						<i class="fa fa-bars"></i>
-					  </a>
-				</div>
-
-			</div>
-		</ul>
-		<div id=topchunk>
-
-			<div id=toptext>
-				<h2> Hi, I'm Ling ✨</h2>
-				<p id=topsmbody>
-					 Hailing from Toronto and Shanghai, I'm an engineer-turned-designer with a love for AI 
-					 and emerging tech. Currently building tools to fight cybercrime at <a href="https://abnormalsecurity.com/"> Abnormal</a>
-							
-
-					<br><br>
-					Previously at CashApp 
-
-						</p>
-			</div>
-			<div class="header_illustration_container">
-			<img id="header_illustration" src="pics/general/portfolio_header.gif">
-		</div>
-			
-			
-		</div>
-		<div id=workchunk>
-			<div id="maincasestudies">
-				<a href="work/abnormal_summary.html" class = "casestudy">
-					
-
-					<div class="casetext">
-						<p class="cardsubtitle">Product Design at Abnormal Security</p>
-						<h3 class="cardtitle">My Experience at Abnormal </h3>
-
-						<p class="casebody">
-							A summary of my time designing at a series-B cybersecurity startup.
-
-						</p>
-					</div>
-					<div class="homeimgcontainer">
-						<img src="pics/abnormal/Abnormal.png" class = "homeimg" alt="">
-					</div>
-					
-				</a> 
-				<!-- <a href="work/abnormal_work.html" class = "casestudy">
-					
-
-					<div class="casetext">
-						<p class="cardsubtitle">Product Design at Abnormal Security</p>
-						<h3 class="cardtitle">Understanding Security Posture </h3>
-
-						<p class="casebody">
-							Helping users understand and action on changes to their security environment.
-
-						</p>
-					</div>
-					<div class="homeimgcontainer">
-						<img src="pics/abnormal/security_posture.png" class = "homeimg" alt="">
-					</div>
-					
-				</a> -->
-				<a href="work/abnormal_designsys.html" class = "casestudy">
-				<!-- <div class="casestudy"> -->
-					<div class="homeimgcontainer">
-						<img src="pics/abnormal/Neurons.png" class = "homeimg" alt="">
-					</div>
-
-					<div class="casetext">
-						<p class="cardsubtitle">Product Design at Abnormal Security</p>
-						<h3 class="cardtitle">Design System</h3>
-
-						<p class="casebody">
-							 Creating and maintaining Abnormal's first formal design system. <!-- create components, libraries, and patterns and provide support for the central design system, Market.  -->
-						</p>
-					</div>
-					
-				<!-- </div> -->
-				</a>
-				
-				<a href="work/cash_support.html" class = "casestudy">
-					
-					<div class="casetext">
-						<p class="cardsubtitle">Product Design Internship at Square </p>
-						<h3 class="cardtitle">Cash App Support</h3>
-						<p class="casebody">
-							Designing for search in customer support, under the global product team.
-							
-						</p>
-					</div>
-					<div class="homeimgcontainer">
-						<img src="pics/general/cash_sm_cover_2.png" class = "homeimg" alt="">
-					</div>
-				</a>
-				<a href="work/patient_health.html" class = "casestudy">
-				<!-- <div class="casestudy"> -->
-					<div class="homeimgcontainer">
-						<img src="pics/patient_health/health_banner.png" class = "homeimg" alt="">
-					</div>
-					<div class="casetext">
-						<p class="cardsubtitle">School Project</p>
-						<h3 class="cardtitle">Patient Health Monitoring</h3>
-						<!-- <p class="cardsubtitle">(In progress)</p> -->
-
-						<p class="casebody">
-							Helping home caretakers better monitor and track health metrics to prevent patient deterioration
-						</p>
-					</div>
-				
-				<!-- </div> -->
-				</a>
-				<a href="work/reach.html" class = "casestudy">
-					
-					<div class="casetext">
-						<p class="cardsubtitle">Passion Project</p>
-						<h3 class="cardtitle">Student to Student Mentorship</h3>
-						<p class="casebody">
-							Connecting student mentors and mentees in a university setting.
-						</p>
-					</div>
-					<div class="homeimgcontainer">
-						<img src="pics/general/reach_sm_cover.png" class = "homeimg" alt="">
-					</div>
-	
-					
-				</a>
-				<a href="work/dessa.html" class = "casestudy">
-					<div class="homeimgcontainer">
-						<img src="pics/dessa/0_5preview_dessa.png" class = "homeimg" alt="">
-					</div>
-					<div class="casetext">
-						<p class="cardsubtitle">UX Internship at Dessa</p>
-						<h3 class="cardtitle">Elevating the Machine Learning Workflow</h3>
-						<p class="casebody">
-							Redesigning machine learning software to be intuitive and friendly.
-						</p>
-					</div>
-					
-	
-					
-				</a>
-	
-			</div>
-
-		<!-- <div class="worksection">
-			<section class="titleblock">
-				<h2 class="titletext">other design work</h2>
-
-			</section>
-
-			<div class="workrow">
-				<div class="workcard wip">
-					<div class="cardimgcontainer">
-						<img src="pics/motion/bounce_2.gif" alt="" class="fullw cardimg ">
-					</div>
-					<div class="cardtext">
-						<p class="cardsubtitle">Personal Project</p>
-
-						<h3 class="cardtitle">30 Days of Motion Design</h3>
-						<p class="descript">Makin' things move around</p>	
-						<p class="descript">(In Progress)</p>	
-
-					</div>
-				</div>
-				
-				<a href="work/faketrump.html" class="workcard">
-					<div class="cardimgcontainer">
-						<img src="pics/trumptweets.jpg" alt="" class="cardimg">
-					</div>
-					<div class="cardtext">
-						<p class="cardsubtitle">ML / Front-End / Interaction</p>
-
-						<h3 class="cardtitle">faketrump.ai</h3>
-						<p class="descript">Using GPT-2 to generate and gamify finding real vs. fake Trump tweets.
-							Over 17,000 visits from 16 countries.
-						</p>	
-					</div>
-				</a>
-				
-				
-				
-			</div>
-		</div> -->
-	</div>
-	<div class="footer">
-		<div class="footer_content">
-			
-			<p>This portfolio was built with  ♥</p>
-			<ul class="footer_links">
-				
-				<a href="mailto:ling.lu916@gmail.com" class="footer_link">Email</a>
-				<a href="https://github.com/linglu66" class="footer_link">Github</a>
-
-				<a href="https://www.linkedin.com/in/ling-l-b4982288/" class="footer_link">Linkedin</a>
-
-			</ul>
-		</div>
-	</div>
-	
-	<!-- <script src="node_modules/jquery.js"></script> -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
-    
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="tilt.jquery.js"></script>
-	<script>
-		function myFunction() {
-			var x = document.getElementById("toplinks");
-			if (x.className === "toplinks") {
-				x.className += " responsive";
-			} else {
-				x.className = "toplinks";
-			}
-			}
-		$('.js-tilt').tilt({
-			scale: 2.0
-		})
-	</script>
-
+<body style="margin: 0; padding: 0; font-family: 'Geist Mono', monospace; background-color: #fafaf9; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div style="text-align: center; padding: 2rem;">
+        <h1 style="font-size: 1.5rem; font-weight: 500; color: #171717; margin: 0 0 0.75rem 0; letter-spacing: -0.02em;">
+            under construction<span class="dot1">.</span><span class="dot2">.</span><span class="dot3">.</span>
+        </h1>
+        <p style="font-size: 0.75rem; font-weight: 400; color: #737373; margin: 0; line-height: 1.6;">
+            ling is recalibrating. new projects loading
+        </p>
+    </div>
+    <div style="position: absolute; bottom: 2rem; text-align: center;">
+        <p style="font-size: 0.65rem; font-weight: 400; color: #a3a3a3; margin: 0;">
+            good things take time
+        </p>
+    </div>
 </body>
 </html>
